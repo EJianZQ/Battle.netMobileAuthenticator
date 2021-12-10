@@ -140,6 +140,13 @@ namespace Battle.netMobileAuthenticator
                         }
                     }
                     #endregion
+
+                    #region 验证码推送处理
+                    if(smg.NewCodeToastEnabled == true)
+                    {
+                        metroCheckBox_NewCodeToast.CheckState = CheckState.Checked;
+                    }
+                    #endregion
                 }
                 else
                 {
@@ -435,6 +442,16 @@ namespace Battle.netMobileAuthenticator
                 if (time == 0)
                 {
                     metroTextBox_CurrentCode.Text = this.Authenticator.AuthenticatorData.CurrentCode;
+                    if(metroCheckBox_NewCodeToast.CheckState == CheckState.Checked)
+                    {
+                        Thread toastThread = new Thread(() =>
+                        {
+                            string text = string.Empty;
+                            text = metroCheckBox_AutoCopy.CheckState is CheckState.Checked ? "验证码已刷新，新的验证码为" + Authenticator.CurrentCode : "验证码已刷新，新的验证码为" + Authenticator.CurrentCode + "\n已自动复制至剪切板";
+                            Toast.ShowNotifiy("验证码刷新", text, this.Icon, 5000);
+                        });
+                        toastThread.Start();
+                    }
                 }
             }
         }
@@ -659,6 +676,11 @@ namespace Battle.netMobileAuthenticator
         private void metroTextBox_IdentifyCustomFormot_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroCheckBox_NewCodeToast_CheckStateChanged(object sender, EventArgs e)
+        {
+            SettingManager.Write(SettingType.CreateRestore, "NewCodeToastEnabled", metroCheckBox_NewCodeToast.CheckState is CheckState.Checked ? "True" : "False");
         }
     }
 }

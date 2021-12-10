@@ -55,6 +55,9 @@ namespace Battle.netMobileAuthenticator
             this.metroTabControl_Setting = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage_GlobalSetting = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage_CreateRestoreSetting = new MetroFramework.Controls.MetroTabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroTextBox_IdentifyCustomFormot = new MetroFramework.Controls.MetroTextBox();
             this.metroCheckBox_MonitorClipboard = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox_CopyCustomFormatCheck = new System.Windows.Forms.PictureBox();
@@ -92,9 +95,6 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_Index = new HZH_Controls.Controls.UCBtnImg();
             this.ucBtnImg_SaveList = new HZH_Controls.Controls.UCBtnImg();
             this.ucBtnImg_Setting = new HZH_Controls.Controls.UCBtnImg();
-            this.metroTextBox_IdentifyCustomFormot = new MetroFramework.Controls.MetroTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl_Main.SuspendLayout();
             this.tabPage_Create.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_History)).BeginInit();
@@ -102,10 +102,10 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_Setting.SuspendLayout();
             this.metroTabControl_Setting.SuspendLayout();
             this.metroTabPage_CreateRestoreSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatCheck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatInfo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // ucSplitLine_V1
@@ -520,6 +520,55 @@ namespace Battle.netMobileAuthenticator
             this.metroTabPage_CreateRestoreSetting.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage_CreateRestoreSetting.VerticalScrollbarSize = 8;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox2.Enabled = false;
+            this.pictureBox2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox2.Location = new System.Drawing.Point(183, 396);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox1.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 398);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // metroTextBox_IdentifyCustomFormot
+            // 
+            this.metroTextBox_IdentifyCustomFormot.BackColor = System.Drawing.Color.White;
+            this.metroTextBox_IdentifyCustomFormot.Enabled = false;
+            this.metroTextBox_IdentifyCustomFormot.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.metroTextBox_IdentifyCustomFormot.FontWeight = MetroFramework.MetroTextBoxWeight.Light;
+            this.metroTextBox_IdentifyCustomFormot.IconRight = true;
+            this.metroTextBox_IdentifyCustomFormot.Location = new System.Drawing.Point(214, 394);
+            this.metroTextBox_IdentifyCustomFormot.MaxLength = 32767;
+            this.metroTextBox_IdentifyCustomFormot.Name = "metroTextBox_IdentifyCustomFormot";
+            this.metroTextBox_IdentifyCustomFormot.PasswordChar = '\0';
+            this.metroTextBox_IdentifyCustomFormot.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox_IdentifyCustomFormot.SelectedText = "";
+            this.metroTextBox_IdentifyCustomFormot.Size = new System.Drawing.Size(177, 23);
+            this.metroTextBox_IdentifyCustomFormot.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox_IdentifyCustomFormot.TabIndex = 37;
+            this.metroTextBox_IdentifyCustomFormot.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.metroTextBox_IdentifyCustomFormot.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox_IdentifyCustomFormot.UseCustomBackColor = true;
+            this.metroTextBox_IdentifyCustomFormot.UseSelectable = true;
+            this.metroTextBox_IdentifyCustomFormot.TextChanged += new System.EventHandler(this.metroTextBox_IdentifyCustomFormot_TextChanged);
+            // 
             // metroCheckBox_MonitorClipboard
             // 
             this.metroCheckBox_MonitorClipboard.AutoSize = true;
@@ -666,6 +715,7 @@ namespace Battle.netMobileAuthenticator
             this.metroCheckBox_NewCodeToast.Text = "启用";
             this.metroCheckBox_NewCodeToast.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroCheckBox_NewCodeToast.UseSelectable = true;
+            this.metroCheckBox_NewCodeToast.CheckStateChanged += new System.EventHandler(this.metroCheckBox_NewCodeToast_CheckStateChanged);
             // 
             // metroLabel12
             // 
@@ -1026,55 +1076,6 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_Setting.TipsText = "";
             this.ucBtnImg_Setting.BtnClick += new System.EventHandler(this.ucBtnImg_Setting_BtnClick);
             // 
-            // metroTextBox_IdentifyCustomFormot
-            // 
-            this.metroTextBox_IdentifyCustomFormot.BackColor = System.Drawing.Color.White;
-            this.metroTextBox_IdentifyCustomFormot.Enabled = false;
-            this.metroTextBox_IdentifyCustomFormot.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox_IdentifyCustomFormot.FontWeight = MetroFramework.MetroTextBoxWeight.Light;
-            this.metroTextBox_IdentifyCustomFormot.IconRight = true;
-            this.metroTextBox_IdentifyCustomFormot.Location = new System.Drawing.Point(214, 394);
-            this.metroTextBox_IdentifyCustomFormot.MaxLength = 32767;
-            this.metroTextBox_IdentifyCustomFormot.Name = "metroTextBox_IdentifyCustomFormot";
-            this.metroTextBox_IdentifyCustomFormot.PasswordChar = '\0';
-            this.metroTextBox_IdentifyCustomFormot.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox_IdentifyCustomFormot.SelectedText = "";
-            this.metroTextBox_IdentifyCustomFormot.Size = new System.Drawing.Size(177, 23);
-            this.metroTextBox_IdentifyCustomFormot.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox_IdentifyCustomFormot.TabIndex = 37;
-            this.metroTextBox_IdentifyCustomFormot.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.metroTextBox_IdentifyCustomFormot.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox_IdentifyCustomFormot.UseCustomBackColor = true;
-            this.metroTextBox_IdentifyCustomFormot.UseSelectable = true;
-            this.metroTextBox_IdentifyCustomFormot.TextChanged += new System.EventHandler(this.metroTextBox_IdentifyCustomFormot_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox1.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 398);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox2.Location = new System.Drawing.Point(183, 396);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 39;
-            this.pictureBox2.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1100,10 +1101,10 @@ namespace Battle.netMobileAuthenticator
             this.metroTabControl_Setting.ResumeLayout(false);
             this.metroTabPage_CreateRestoreSetting.ResumeLayout(false);
             this.metroTabPage_CreateRestoreSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatCheck)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatInfo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

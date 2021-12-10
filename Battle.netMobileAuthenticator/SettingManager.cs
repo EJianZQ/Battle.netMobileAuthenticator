@@ -35,6 +35,10 @@ namespace Battle.netMobileAuthenticator
 
         public int AutoIdentifyFormat { get; set; }
 
+        public string AutoIdentifyCustomFormat { get; set; }
+
+        public bool NewCodeToastEnabled { get; set; }
+
         /// <summary>
         /// SettingManager类读取Config并初始化
         /// </summary>
@@ -77,6 +81,10 @@ namespace Battle.netMobileAuthenticator
                 AutoIdentifyFormat = Convert.ToInt32(temp);
             else
                 AutoIdentifyFormat = -1;
+            #endregion
+
+            #region 验证码推送
+            NewCodeToastEnabled = Read(SettingType.CreateRestore, "NewCodeToastEnabled") is "True" ? true : false;
             #endregion
         }
 

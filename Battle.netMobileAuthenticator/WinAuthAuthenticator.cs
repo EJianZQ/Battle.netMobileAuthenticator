@@ -788,5 +788,12 @@ namespace Battle.netMobileAuthenticator
     public class SaveListRecord : AuthenticatorRecord
     {
         public string Name { get; set; }
+
+        public SaveListRecord(string name,string serial, string restoreCode)
+        {
+            Name = name;
+            Serial = serial;
+            RestoreCode = restoreCode;
+        }
     }
 }

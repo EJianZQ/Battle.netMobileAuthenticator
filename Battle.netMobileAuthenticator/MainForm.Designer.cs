@@ -51,12 +51,53 @@ namespace Battle.netMobileAuthenticator
             this.pictureBox_Region = new System.Windows.Forms.PictureBox();
             this.metroTextBox_Serial = new MetroFramework.Controls.MetroTextBox();
             this.tabPage_SaveList = new System.Windows.Forms.TabPage();
+            this.tabControl_SaveList = new System.Windows.Forms.TabControl();
+            this.tabPage_SaveListEx = new System.Windows.Forms.TabPage();
+            this.panel_auth3 = new System.Windows.Forms.Panel();
+            this.pictureBox_auth3copy = new System.Windows.Forms.PictureBox();
+            this.pictureBox_auth3edit = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListRestoreCode3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListSerial3 = new System.Windows.Forms.PictureBox();
+            this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
+            this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
+            this.panel_auth2 = new System.Windows.Forms.Panel();
+            this.pictureBox_auth2copy = new System.Windows.Forms.PictureBox();
+            this.pictureBox_auth2edit = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListRestoreCode2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListSerial2 = new System.Windows.Forms.PictureBox();
+            this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel24 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel25 = new MetroFramework.Controls.MetroLabel();
+            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
+            this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
+            this.panel_auth1 = new System.Windows.Forms.Panel();
+            this.pictureBox_auth1copy = new System.Windows.Forms.PictureBox();
+            this.pictureBox_auth1edit = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListRestoreCode1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListSerial1 = new System.Windows.Forms.PictureBox();
+            this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel21 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel_auth1name = new MetroFramework.Controls.MetroLabel();
+            this.circularProgressBar_auth1 = new CircularProgressBar.CircularProgressBar();
+            this.ucSplitLine_H10 = new HZH_Controls.Controls.UCSplitLine_H();
+            this.ucSplitLine_H9 = new HZH_Controls.Controls.UCSplitLine_H();
+            this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.circularProgressBar3 = new CircularProgressBar.CircularProgressBar();
             this.tabPage_Setting = new System.Windows.Forms.TabPage();
             this.metroTabControl_Setting = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage_GlobalSetting = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage_CreateRestoreSetting = new MetroFramework.Controls.MetroTabPage();
+            this.metroCheckBox_NewCodeAutoCopy = new MetroFramework.Controls.MetroCheckBox();
+            this.pictureBox_NewCodeAutoCopy = new System.Windows.Forms.PictureBox();
+            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_AutoIdentifyCustomFormatInfo = new System.Windows.Forms.PictureBox();
             this.metroTextBox_IdentifyCustomFormot = new MetroFramework.Controls.MetroTextBox();
             this.metroCheckBox_MonitorClipboard = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
@@ -66,8 +107,8 @@ namespace Battle.netMobileAuthenticator
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.ucSplitLine_H8 = new HZH_Controls.Controls.UCSplitLine_H();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton_DeleteData = new MetroFramework.Controls.MetroButton();
+            this.metroButton_RestoreSettings = new MetroFramework.Controls.MetroButton();
             this.ucSplitLine_H7 = new HZH_Controls.Controls.UCSplitLine_H();
             this.metroCheckBox_NewCodeToast = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
@@ -91,21 +132,56 @@ namespace Battle.netMobileAuthenticator
             this.ucSplitLine_H3 = new HZH_Controls.Controls.UCSplitLine_H();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage_SaveListSetting = new MetroFramework.Controls.MetroTabPage();
+            this.tabPage_CloudConfig = new System.Windows.Forms.TabPage();
+            this.tabControl_CloudConfig = new System.Windows.Forms.TabControl();
+            this.tabPage_LoginQQ = new System.Windows.Forms.TabPage();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroLabel_FunctionDescription = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_QQ = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.authenticatorTimer = new System.Windows.Forms.Timer(this.components);
             this.ucBtnImg_Index = new HZH_Controls.Controls.UCBtnImg();
             this.ucBtnImg_SaveList = new HZH_Controls.Controls.UCBtnImg();
             this.ucBtnImg_Setting = new HZH_Controls.Controls.UCBtnImg();
+            this.ucBtnImg_CloudConfig = new HZH_Controls.Controls.UCBtnImg();
+            this.Auth1Timer = new System.Windows.Forms.Timer(this.components);
+            this.Auth3Timer = new System.Windows.Forms.Timer(this.components);
+            this.Auth2Timer = new System.Windows.Forms.Timer(this.components);
             this.tabControl_Main.SuspendLayout();
             this.tabPage_Create.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_History)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Region)).BeginInit();
+            this.tabPage_SaveList.SuspendLayout();
+            this.tabControl_SaveList.SuspendLayout();
+            this.tabPage_SaveListEx.SuspendLayout();
+            this.panel_auth3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3copy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial3)).BeginInit();
+            this.panel_auth2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2copy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial2)).BeginInit();
+            this.panel_auth1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1copy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.tabPage_Setting.SuspendLayout();
             this.metroTabControl_Setting.SuspendLayout();
             this.metroTabPage_CreateRestoreSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NewCodeAutoCopy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_AutoIdentifyCustomFormatInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatCheck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatInfo)).BeginInit();
+            this.tabPage_CloudConfig.SuspendLayout();
+            this.tabControl_CloudConfig.SuspendLayout();
+            this.tabPage_LoginQQ.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_QQ)).BeginInit();
             this.SuspendLayout();
             // 
             // ucSplitLine_V1
@@ -122,6 +198,7 @@ namespace Battle.netMobileAuthenticator
             this.tabControl_Main.Controls.Add(this.tabPage_Create);
             this.tabControl_Main.Controls.Add(this.tabPage_SaveList);
             this.tabControl_Main.Controls.Add(this.tabPage_Setting);
+            this.tabControl_Main.Controls.Add(this.tabPage_CloudConfig);
             this.tabControl_Main.Location = new System.Drawing.Point(51, 3);
             this.tabControl_Main.Name = "tabControl_Main";
             this.tabControl_Main.SelectedIndex = 0;
@@ -210,6 +287,7 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_CreateSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ucBtnImg_CreateSetting.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.ucBtnImg_CreateSetting.TipsText = "";
+            this.ucBtnImg_CreateSetting.BtnClick += new System.EventHandler(this.ucBtnImg_CreateSetting_BtnClick);
             // 
             // ucBtnImg_AddList
             // 
@@ -418,6 +496,7 @@ namespace Battle.netMobileAuthenticator
             // 
             // tabPage_SaveList
             // 
+            this.tabPage_SaveList.Controls.Add(this.tabControl_SaveList);
             this.tabPage_SaveList.Location = new System.Drawing.Point(4, 22);
             this.tabPage_SaveList.Name = "tabPage_SaveList";
             this.tabPage_SaveList.Padding = new System.Windows.Forms.Padding(3);
@@ -425,6 +504,524 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_SaveList.TabIndex = 1;
             this.tabPage_SaveList.Text = "SaveList";
             this.tabPage_SaveList.UseVisualStyleBackColor = true;
+            // 
+            // tabControl_SaveList
+            // 
+            this.tabControl_SaveList.Controls.Add(this.tabPage_SaveListEx);
+            this.tabControl_SaveList.Controls.Add(this.tabPage3);
+            this.tabControl_SaveList.Location = new System.Drawing.Point(-4, 0);
+            this.tabControl_SaveList.Name = "tabControl_SaveList";
+            this.tabControl_SaveList.SelectedIndex = 0;
+            this.tabControl_SaveList.Size = new System.Drawing.Size(433, 354);
+            this.tabControl_SaveList.TabIndex = 0;
+            // 
+            // tabPage_SaveListEx
+            // 
+            this.tabPage_SaveListEx.Controls.Add(this.panel_auth3);
+            this.tabPage_SaveListEx.Controls.Add(this.panel_auth2);
+            this.tabPage_SaveListEx.Controls.Add(this.metroLabel20);
+            this.tabPage_SaveListEx.Controls.Add(this.panel_auth1);
+            this.tabPage_SaveListEx.Controls.Add(this.ucSplitLine_H10);
+            this.tabPage_SaveListEx.Controls.Add(this.ucSplitLine_H9);
+            this.tabPage_SaveListEx.Controls.Add(this.metroLabel19);
+            this.tabPage_SaveListEx.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_SaveListEx.Name = "tabPage_SaveListEx";
+            this.tabPage_SaveListEx.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_SaveListEx.Size = new System.Drawing.Size(425, 328);
+            this.tabPage_SaveListEx.TabIndex = 0;
+            this.tabPage_SaveListEx.Text = "ListFunction";
+            this.tabPage_SaveListEx.UseVisualStyleBackColor = true;
+            // 
+            // panel_auth3
+            // 
+            this.panel_auth3.Controls.Add(this.pictureBox_auth3copy);
+            this.panel_auth3.Controls.Add(this.pictureBox_auth3edit);
+            this.panel_auth3.Controls.Add(this.pictureBox_SaveListRestoreCode3);
+            this.panel_auth3.Controls.Add(this.pictureBox_SaveListSerial3);
+            this.panel_auth3.Controls.Add(this.metroLabel26);
+            this.panel_auth3.Controls.Add(this.metroLabel27);
+            this.panel_auth3.Controls.Add(this.metroLabel28);
+            this.panel_auth3.Controls.Add(this.metroLabel29);
+            this.panel_auth3.Controls.Add(this.circularProgressBar2);
+            this.panel_auth3.Location = new System.Drawing.Point(23, 217);
+            this.panel_auth3.Name = "panel_auth3";
+            this.panel_auth3.Size = new System.Drawing.Size(378, 97);
+            this.panel_auth3.TabIndex = 24;
+            this.panel_auth3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_auth3_Paint);
+            // 
+            // pictureBox_auth3copy
+            // 
+            this.pictureBox_auth3copy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth3copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3copy.Location = new System.Drawing.Point(222, 62);
+            this.pictureBox_auth3copy.Name = "pictureBox_auth3copy";
+            this.pictureBox_auth3copy.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth3copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth3copy.TabIndex = 29;
+            this.pictureBox_auth3copy.TabStop = false;
+            // 
+            // pictureBox_auth3edit
+            // 
+            this.pictureBox_auth3edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth3edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3edit.Location = new System.Drawing.Point(248, 62);
+            this.pictureBox_auth3edit.Name = "pictureBox_auth3edit";
+            this.pictureBox_auth3edit.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth3edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth3edit.TabIndex = 28;
+            this.pictureBox_auth3edit.TabStop = false;
+            // 
+            // pictureBox_SaveListRestoreCode3
+            // 
+            this.pictureBox_SaveListRestoreCode3.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode3.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode3.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox_SaveListRestoreCode3.Name = "pictureBox_SaveListRestoreCode3";
+            this.pictureBox_SaveListRestoreCode3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListRestoreCode3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListRestoreCode3.TabIndex = 27;
+            this.pictureBox_SaveListRestoreCode3.TabStop = false;
+            // 
+            // pictureBox_SaveListSerial3
+            // 
+            this.pictureBox_SaveListSerial3.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial3.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial3.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox_SaveListSerial3.Name = "pictureBox_SaveListSerial3";
+            this.pictureBox_SaveListSerial3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListSerial3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListSerial3.TabIndex = 26;
+            this.pictureBox_SaveListSerial3.TabStop = false;
+            // 
+            // metroLabel26
+            // 
+            this.metroLabel26.AutoSize = true;
+            this.metroLabel26.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel26.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel26.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel26.Location = new System.Drawing.Point(274, 58);
+            this.metroLabel26.Name = "metroLabel26";
+            this.metroLabel26.Size = new System.Drawing.Size(92, 25);
+            this.metroLabel26.TabIndex = 25;
+            this.metroLabel26.Text = "67358566";
+            // 
+            // metroLabel27
+            // 
+            this.metroLabel27.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel27.Location = new System.Drawing.Point(35, 63);
+            this.metroLabel27.Name = "metroLabel27";
+            this.metroLabel27.Size = new System.Drawing.Size(87, 19);
+            this.metroLabel27.TabIndex = 24;
+            this.metroLabel27.Text = "B8Z8P6BUG3";
+            // 
+            // metroLabel28
+            // 
+            this.metroLabel28.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel28.Location = new System.Drawing.Point(35, 36);
+            this.metroLabel28.Name = "metroLabel28";
+            this.metroLabel28.Size = new System.Drawing.Size(124, 19);
+            this.metroLabel28.TabIndex = 23;
+            this.metroLabel28.Text = "CN-2105-1480-1275";
+            // 
+            // metroLabel29
+            // 
+            this.metroLabel29.AutoSize = true;
+            this.metroLabel29.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel29.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel29.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel29.Name = "metroLabel29";
+            this.metroLabel29.Size = new System.Drawing.Size(93, 19);
+            this.metroLabel29.TabIndex = 20;
+            this.metroLabel29.Text = "辣条的安全令";
+            // 
+            // circularProgressBar2
+            // 
+            this.circularProgressBar2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar2.AnimationSpeed = 500;
+            this.circularProgressBar2.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar2.InnerMargin = 0;
+            this.circularProgressBar2.InnerWidth = 0;
+            this.circularProgressBar2.Location = new System.Drawing.Point(335, 20);
+            this.circularProgressBar2.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar2.Maximum = 30;
+            this.circularProgressBar2.Minimum = 1;
+            this.circularProgressBar2.Name = "circularProgressBar2";
+            this.circularProgressBar2.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar2.OuterMargin = 0;
+            this.circularProgressBar2.OuterWidth = 1;
+            this.circularProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar2.ProgressWidth = -1;
+            this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar2.Size = new System.Drawing.Size(31, 29);
+            this.circularProgressBar2.StartAngle = 270;
+            this.circularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar2.SubscriptText = "";
+            this.circularProgressBar2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar2.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar2.SuperscriptText = "";
+            this.circularProgressBar2.TabIndex = 19;
+            this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar2.Value = 1;
+            // 
+            // panel_auth2
+            // 
+            this.panel_auth2.Controls.Add(this.pictureBox_auth2copy);
+            this.panel_auth2.Controls.Add(this.pictureBox_auth2edit);
+            this.panel_auth2.Controls.Add(this.pictureBox_SaveListRestoreCode2);
+            this.panel_auth2.Controls.Add(this.pictureBox_SaveListSerial2);
+            this.panel_auth2.Controls.Add(this.metroLabel17);
+            this.panel_auth2.Controls.Add(this.metroLabel18);
+            this.panel_auth2.Controls.Add(this.metroLabel24);
+            this.panel_auth2.Controls.Add(this.metroLabel25);
+            this.panel_auth2.Controls.Add(this.circularProgressBar1);
+            this.panel_auth2.Location = new System.Drawing.Point(23, 105);
+            this.panel_auth2.Name = "panel_auth2";
+            this.panel_auth2.Size = new System.Drawing.Size(378, 97);
+            this.panel_auth2.TabIndex = 23;
+            this.panel_auth2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_auth2_Paint);
+            // 
+            // pictureBox_auth2copy
+            // 
+            this.pictureBox_auth2copy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth2copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2copy.Location = new System.Drawing.Point(222, 62);
+            this.pictureBox_auth2copy.Name = "pictureBox_auth2copy";
+            this.pictureBox_auth2copy.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth2copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth2copy.TabIndex = 29;
+            this.pictureBox_auth2copy.TabStop = false;
+            // 
+            // pictureBox_auth2edit
+            // 
+            this.pictureBox_auth2edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth2edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2edit.Location = new System.Drawing.Point(248, 62);
+            this.pictureBox_auth2edit.Name = "pictureBox_auth2edit";
+            this.pictureBox_auth2edit.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth2edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth2edit.TabIndex = 28;
+            this.pictureBox_auth2edit.TabStop = false;
+            // 
+            // pictureBox_SaveListRestoreCode2
+            // 
+            this.pictureBox_SaveListRestoreCode2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode2.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox_SaveListRestoreCode2.Name = "pictureBox_SaveListRestoreCode2";
+            this.pictureBox_SaveListRestoreCode2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListRestoreCode2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListRestoreCode2.TabIndex = 27;
+            this.pictureBox_SaveListRestoreCode2.TabStop = false;
+            // 
+            // pictureBox_SaveListSerial2
+            // 
+            this.pictureBox_SaveListSerial2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial2.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox_SaveListSerial2.Name = "pictureBox_SaveListSerial2";
+            this.pictureBox_SaveListSerial2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListSerial2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListSerial2.TabIndex = 26;
+            this.pictureBox_SaveListSerial2.TabStop = false;
+            // 
+            // metroLabel17
+            // 
+            this.metroLabel17.AutoSize = true;
+            this.metroLabel17.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel17.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel17.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel17.Location = new System.Drawing.Point(274, 58);
+            this.metroLabel17.Name = "metroLabel17";
+            this.metroLabel17.Size = new System.Drawing.Size(92, 25);
+            this.metroLabel17.TabIndex = 25;
+            this.metroLabel17.Text = "67358566";
+            // 
+            // metroLabel18
+            // 
+            this.metroLabel18.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel18.Location = new System.Drawing.Point(35, 63);
+            this.metroLabel18.Name = "metroLabel18";
+            this.metroLabel18.Size = new System.Drawing.Size(87, 19);
+            this.metroLabel18.TabIndex = 24;
+            this.metroLabel18.Text = "B8Z8P6BUG3";
+            // 
+            // metroLabel24
+            // 
+            this.metroLabel24.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel24.Location = new System.Drawing.Point(35, 36);
+            this.metroLabel24.Name = "metroLabel24";
+            this.metroLabel24.Size = new System.Drawing.Size(124, 19);
+            this.metroLabel24.TabIndex = 23;
+            this.metroLabel24.Text = "CN-2105-1480-1275";
+            // 
+            // metroLabel25
+            // 
+            this.metroLabel25.AutoSize = true;
+            this.metroLabel25.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel25.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel25.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel25.Name = "metroLabel25";
+            this.metroLabel25.Size = new System.Drawing.Size(93, 19);
+            this.metroLabel25.TabIndex = 20;
+            this.metroLabel25.Text = "辣条的安全令";
+            // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar1.AnimationSpeed = 500;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar1.InnerMargin = 0;
+            this.circularProgressBar1.InnerWidth = 0;
+            this.circularProgressBar1.Location = new System.Drawing.Point(335, 20);
+            this.circularProgressBar1.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar1.Maximum = 30;
+            this.circularProgressBar1.Minimum = 1;
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar1.OuterMargin = 0;
+            this.circularProgressBar1.OuterWidth = 1;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar1.ProgressWidth = -1;
+            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar1.Size = new System.Drawing.Size(31, 29);
+            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar1.SubscriptText = "";
+            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar1.SuperscriptText = "";
+            this.circularProgressBar1.TabIndex = 19;
+            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar1.Value = 1;
+            // 
+            // metroLabel20
+            // 
+            this.metroLabel20.Location = new System.Drawing.Point(76, 147);
+            this.metroLabel20.Name = "metroLabel20";
+            this.metroLabel20.Size = new System.Drawing.Size(275, 19);
+            this.metroLabel20.TabIndex = 22;
+            this.metroLabel20.Text = "当前位置未添加一个已创建或还原的安全令";
+            // 
+            // panel_auth1
+            // 
+            this.panel_auth1.Controls.Add(this.pictureBox_auth1copy);
+            this.panel_auth1.Controls.Add(this.pictureBox_auth1edit);
+            this.panel_auth1.Controls.Add(this.pictureBox_SaveListRestoreCode1);
+            this.panel_auth1.Controls.Add(this.pictureBox_SaveListSerial1);
+            this.panel_auth1.Controls.Add(this.metroLabel23);
+            this.panel_auth1.Controls.Add(this.metroLabel22);
+            this.panel_auth1.Controls.Add(this.metroLabel21);
+            this.panel_auth1.Controls.Add(this.metroLabel_auth1name);
+            this.panel_auth1.Controls.Add(this.circularProgressBar_auth1);
+            this.panel_auth1.Location = new System.Drawing.Point(23, 3);
+            this.panel_auth1.Name = "panel_auth1";
+            this.panel_auth1.Size = new System.Drawing.Size(378, 90);
+            this.panel_auth1.TabIndex = 6;
+            this.panel_auth1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_auth1_Paint);
+            // 
+            // pictureBox_auth1copy
+            // 
+            this.pictureBox_auth1copy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth1copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth1copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth1copy.Location = new System.Drawing.Point(222, 62);
+            this.pictureBox_auth1copy.Name = "pictureBox_auth1copy";
+            this.pictureBox_auth1copy.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth1copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth1copy.TabIndex = 29;
+            this.pictureBox_auth1copy.TabStop = false;
+            // 
+            // pictureBox_auth1edit
+            // 
+            this.pictureBox_auth1edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth1edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth1edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth1edit.Location = new System.Drawing.Point(248, 62);
+            this.pictureBox_auth1edit.Name = "pictureBox_auth1edit";
+            this.pictureBox_auth1edit.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth1edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth1edit.TabIndex = 28;
+            this.pictureBox_auth1edit.TabStop = false;
+            // 
+            // pictureBox_SaveListRestoreCode1
+            // 
+            this.pictureBox_SaveListRestoreCode1.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode1.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode1.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox_SaveListRestoreCode1.Name = "pictureBox_SaveListRestoreCode1";
+            this.pictureBox_SaveListRestoreCode1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListRestoreCode1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListRestoreCode1.TabIndex = 27;
+            this.pictureBox_SaveListRestoreCode1.TabStop = false;
+            // 
+            // pictureBox_SaveListSerial1
+            // 
+            this.pictureBox_SaveListSerial1.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial1.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial1.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox_SaveListSerial1.Name = "pictureBox_SaveListSerial1";
+            this.pictureBox_SaveListSerial1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListSerial1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListSerial1.TabIndex = 26;
+            this.pictureBox_SaveListSerial1.TabStop = false;
+            // 
+            // metroLabel23
+            // 
+            this.metroLabel23.AutoSize = true;
+            this.metroLabel23.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel23.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel23.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel23.Location = new System.Drawing.Point(274, 58);
+            this.metroLabel23.Name = "metroLabel23";
+            this.metroLabel23.Size = new System.Drawing.Size(92, 25);
+            this.metroLabel23.TabIndex = 25;
+            this.metroLabel23.Text = "67358566";
+            // 
+            // metroLabel22
+            // 
+            this.metroLabel22.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel22.Location = new System.Drawing.Point(35, 63);
+            this.metroLabel22.Name = "metroLabel22";
+            this.metroLabel22.Size = new System.Drawing.Size(87, 19);
+            this.metroLabel22.TabIndex = 24;
+            this.metroLabel22.Text = "B8Z8P6BUG3";
+            // 
+            // metroLabel21
+            // 
+            this.metroLabel21.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel21.Location = new System.Drawing.Point(35, 36);
+            this.metroLabel21.Name = "metroLabel21";
+            this.metroLabel21.Size = new System.Drawing.Size(124, 19);
+            this.metroLabel21.TabIndex = 23;
+            this.metroLabel21.Text = "CN-2105-1480-1275";
+            // 
+            // metroLabel_auth1name
+            // 
+            this.metroLabel_auth1name.AutoSize = true;
+            this.metroLabel_auth1name.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel_auth1name.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
+            this.metroLabel_auth1name.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel_auth1name.Name = "metroLabel_auth1name";
+            this.metroLabel_auth1name.Size = new System.Drawing.Size(93, 19);
+            this.metroLabel_auth1name.TabIndex = 20;
+            this.metroLabel_auth1name.Text = "辣条的安全令";
+            // 
+            // circularProgressBar_auth1
+            // 
+            this.circularProgressBar_auth1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar_auth1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar_auth1.AnimationSpeed = 500;
+            this.circularProgressBar_auth1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar_auth1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar_auth1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar_auth1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar_auth1.InnerMargin = 0;
+            this.circularProgressBar_auth1.InnerWidth = 0;
+            this.circularProgressBar_auth1.Location = new System.Drawing.Point(335, 17);
+            this.circularProgressBar_auth1.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar_auth1.Maximum = 30;
+            this.circularProgressBar_auth1.Minimum = 1;
+            this.circularProgressBar_auth1.Name = "circularProgressBar_auth1";
+            this.circularProgressBar_auth1.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar_auth1.OuterMargin = 0;
+            this.circularProgressBar_auth1.OuterWidth = 1;
+            this.circularProgressBar_auth1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar_auth1.ProgressWidth = -1;
+            this.circularProgressBar_auth1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar_auth1.Size = new System.Drawing.Size(31, 29);
+            this.circularProgressBar_auth1.StartAngle = 270;
+            this.circularProgressBar_auth1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_auth1.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar_auth1.SubscriptText = "";
+            this.circularProgressBar_auth1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_auth1.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar_auth1.SuperscriptText = "";
+            this.circularProgressBar_auth1.TabIndex = 19;
+            this.circularProgressBar_auth1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar_auth1.Value = 1;
+            // 
+            // ucSplitLine_H10
+            // 
+            this.ucSplitLine_H10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.ucSplitLine_H10.Location = new System.Drawing.Point(23, 209);
+            this.ucSplitLine_H10.Name = "ucSplitLine_H10";
+            this.ucSplitLine_H10.Size = new System.Drawing.Size(378, 1);
+            this.ucSplitLine_H10.TabIndex = 5;
+            this.ucSplitLine_H10.TabStop = false;
+            // 
+            // ucSplitLine_H9
+            // 
+            this.ucSplitLine_H9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.ucSplitLine_H9.Location = new System.Drawing.Point(23, 99);
+            this.ucSplitLine_H9.Name = "ucSplitLine_H9";
+            this.ucSplitLine_H9.Size = new System.Drawing.Size(378, 1);
+            this.ucSplitLine_H9.TabIndex = 4;
+            this.ucSplitLine_H9.TabStop = false;
+            // 
+            // metroLabel19
+            // 
+            this.metroLabel19.Location = new System.Drawing.Point(76, 251);
+            this.metroLabel19.Name = "metroLabel19";
+            this.metroLabel19.Size = new System.Drawing.Size(275, 19);
+            this.metroLabel19.TabIndex = 21;
+            this.metroLabel19.Text = "当前位置未添加一个已创建或还原的安全令";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.circularProgressBar3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(425, 328);
+            this.tabPage3.TabIndex = 1;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // circularProgressBar3
+            // 
+            this.circularProgressBar3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar3.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar3.AnimationSpeed = 500;
+            this.circularProgressBar3.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar3.InnerMargin = 0;
+            this.circularProgressBar3.InnerWidth = 0;
+            this.circularProgressBar3.Location = new System.Drawing.Point(169, 129);
+            this.circularProgressBar3.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar3.Name = "circularProgressBar3";
+            this.circularProgressBar3.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar3.OuterMargin = 0;
+            this.circularProgressBar3.OuterWidth = 1;
+            this.circularProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar3.ProgressWidth = -1;
+            this.circularProgressBar3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar3.Size = new System.Drawing.Size(79, 76);
+            this.circularProgressBar3.StartAngle = 270;
+            this.circularProgressBar3.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar3.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar3.SubscriptText = "";
+            this.circularProgressBar3.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar3.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar3.SuperscriptText = "";
+            this.circularProgressBar3.TabIndex = 18;
+            this.circularProgressBar3.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar3.Value = 68;
             // 
             // tabPage_Setting
             // 
@@ -454,23 +1051,31 @@ namespace Battle.netMobileAuthenticator
             // 
             // metroTabPage_GlobalSetting
             // 
-            this.metroTabPage_GlobalSetting.HorizontalScrollbarBarColor = true;
-            this.metroTabPage_GlobalSetting.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage_GlobalSetting.AutoScroll = true;
+            this.metroTabPage_GlobalSetting.HorizontalScrollbar = true;
+            this.metroTabPage_GlobalSetting.HorizontalScrollbarBarColor = false;
+            this.metroTabPage_GlobalSetting.HorizontalScrollbarHighlightOnWheel = true;
             this.metroTabPage_GlobalSetting.HorizontalScrollbarSize = 10;
             this.metroTabPage_GlobalSetting.Location = new System.Drawing.Point(4, 36);
             this.metroTabPage_GlobalSetting.Name = "metroTabPage_GlobalSetting";
             this.metroTabPage_GlobalSetting.Size = new System.Drawing.Size(415, 309);
+            this.metroTabPage_GlobalSetting.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabPage_GlobalSetting.TabIndex = 0;
             this.metroTabPage_GlobalSetting.Text = "    全局设置    ";
+            this.metroTabPage_GlobalSetting.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTabPage_GlobalSetting.VerticalScrollbar = true;
             this.metroTabPage_GlobalSetting.VerticalScrollbarBarColor = true;
             this.metroTabPage_GlobalSetting.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage_GlobalSetting.VerticalScrollbarSize = 10;
+            this.metroTabPage_GlobalSetting.VerticalScrollbarSize = 8;
             // 
             // metroTabPage_CreateRestoreSetting
             // 
             this.metroTabPage_CreateRestoreSetting.AutoScroll = true;
+            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroCheckBox_NewCodeAutoCopy);
+            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.pictureBox_NewCodeAutoCopy);
+            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroLabel16);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.pictureBox2);
-            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.pictureBox1);
+            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.pictureBox_AutoIdentifyCustomFormatInfo);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroTextBox_IdentifyCustomFormot);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroCheckBox_MonitorClipboard);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroLabel15);
@@ -480,8 +1085,8 @@ namespace Battle.netMobileAuthenticator
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroLabel14);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.ucSplitLine_H8);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroLabel13);
-            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroButton2);
-            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroButton1);
+            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroButton_DeleteData);
+            this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroButton_RestoreSettings);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.ucSplitLine_H7);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroCheckBox_NewCodeToast);
             this.metroTabPage_CreateRestoreSetting.Controls.Add(this.metroLabel12);
@@ -520,6 +1125,43 @@ namespace Battle.netMobileAuthenticator
             this.metroTabPage_CreateRestoreSetting.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage_CreateRestoreSetting.VerticalScrollbarSize = 8;
             // 
+            // metroCheckBox_NewCodeAutoCopy
+            // 
+            this.metroCheckBox_NewCodeAutoCopy.AutoSize = true;
+            this.metroCheckBox_NewCodeAutoCopy.FontWeight = MetroFramework.MetroCheckBoxWeight.Light;
+            this.metroCheckBox_NewCodeAutoCopy.Location = new System.Drawing.Point(344, 490);
+            this.metroCheckBox_NewCodeAutoCopy.Name = "metroCheckBox_NewCodeAutoCopy";
+            this.metroCheckBox_NewCodeAutoCopy.Size = new System.Drawing.Size(47, 15);
+            this.metroCheckBox_NewCodeAutoCopy.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroCheckBox_NewCodeAutoCopy.TabIndex = 42;
+            this.metroCheckBox_NewCodeAutoCopy.Text = "启用";
+            this.metroCheckBox_NewCodeAutoCopy.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroCheckBox_NewCodeAutoCopy.UseSelectable = true;
+            this.metroCheckBox_NewCodeAutoCopy.CheckStateChanged += new System.EventHandler(this.metroCheckBox_NewCodeAutoCopy_CheckStateChanged);
+            // 
+            // pictureBox_NewCodeAutoCopy
+            // 
+            this.pictureBox_NewCodeAutoCopy.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_NewCodeAutoCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_NewCodeAutoCopy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_NewCodeAutoCopy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_NewCodeAutoCopy.Location = new System.Drawing.Point(216, 484);
+            this.pictureBox_NewCodeAutoCopy.Name = "pictureBox_NewCodeAutoCopy";
+            this.pictureBox_NewCodeAutoCopy.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox_NewCodeAutoCopy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_NewCodeAutoCopy.TabIndex = 41;
+            this.pictureBox_NewCodeAutoCopy.TabStop = false;
+            this.pictureBox_NewCodeAutoCopy.Click += new System.EventHandler(this.pictureBox_NewCodeAutoCopy_Click);
+            // 
+            // metroLabel16
+            // 
+            this.metroLabel16.AutoSize = true;
+            this.metroLabel16.Location = new System.Drawing.Point(13, 485);
+            this.metroLabel16.Name = "metroLabel16";
+            this.metroLabel16.Size = new System.Drawing.Size(205, 19);
+            this.metroLabel16.TabIndex = 40;
+            this.metroLabel16.Text = "验证码刷新时自动复制到剪切板";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -533,19 +1175,21 @@ namespace Battle.netMobileAuthenticator
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 39;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
-            // pictureBox1
+            // pictureBox_AutoIdentifyCustomFormatInfo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox1.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 398);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.Location = new System.Drawing.Point(92, 394);
+            this.pictureBox_AutoIdentifyCustomFormatInfo.Name = "pictureBox_AutoIdentifyCustomFormatInfo";
+            this.pictureBox_AutoIdentifyCustomFormatInfo.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox_AutoIdentifyCustomFormatInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.TabIndex = 38;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.TabStop = false;
+            this.pictureBox_AutoIdentifyCustomFormatInfo.Click += new System.EventHandler(this.pictureBox_AutoIdentifyCustomFormatInfo_Click);
             // 
             // metroTextBox_IdentifyCustomFormot
             // 
@@ -664,40 +1308,42 @@ namespace Battle.netMobileAuthenticator
             // metroLabel13
             // 
             this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(12, 499);
+            this.metroLabel13.Location = new System.Drawing.Point(12, 542);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(177, 19);
             this.metroLabel13.TabIndex = 27;
             this.metroLabel13.Text = "更改设置后请点击保存设置";
             // 
-            // metroButton2
+            // metroButton_DeleteData
             // 
-            this.metroButton2.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton2.Location = new System.Drawing.Point(299, 497);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(92, 28);
-            this.metroButton2.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton2.TabIndex = 26;
-            this.metroButton2.Text = "删除现存配置";
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton2.UseSelectable = true;
+            this.metroButton_DeleteData.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton_DeleteData.Location = new System.Drawing.Point(299, 540);
+            this.metroButton_DeleteData.Name = "metroButton_DeleteData";
+            this.metroButton_DeleteData.Size = new System.Drawing.Size(92, 28);
+            this.metroButton_DeleteData.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton_DeleteData.TabIndex = 26;
+            this.metroButton_DeleteData.Text = "删除所有数据";
+            this.metroButton_DeleteData.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton_DeleteData.UseSelectable = true;
+            this.metroButton_DeleteData.Click += new System.EventHandler(this.metroButton_DeleteData_Click);
             // 
-            // metroButton1
+            // metroButton_RestoreSettings
             // 
-            this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton1.Location = new System.Drawing.Point(195, 497);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(92, 28);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton1.TabIndex = 25;
-            this.metroButton1.Text = "还原默认设置";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton1.UseSelectable = true;
+            this.metroButton_RestoreSettings.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton_RestoreSettings.Location = new System.Drawing.Point(195, 540);
+            this.metroButton_RestoreSettings.Name = "metroButton_RestoreSettings";
+            this.metroButton_RestoreSettings.Size = new System.Drawing.Size(92, 28);
+            this.metroButton_RestoreSettings.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton_RestoreSettings.TabIndex = 25;
+            this.metroButton_RestoreSettings.Text = "还原默认设置";
+            this.metroButton_RestoreSettings.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton_RestoreSettings.UseSelectable = true;
+            this.metroButton_RestoreSettings.Click += new System.EventHandler(this.metroButton_RestoreSettings_Click);
             // 
             // ucSplitLine_H7
             // 
             this.ucSplitLine_H7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.ucSplitLine_H7.Location = new System.Drawing.Point(13, 481);
+            this.ucSplitLine_H7.Location = new System.Drawing.Point(13, 524);
             this.ucSplitLine_H7.Name = "ucSplitLine_H7";
             this.ucSplitLine_H7.Size = new System.Drawing.Size(378, 1);
             this.ucSplitLine_H7.TabIndex = 24;
@@ -738,7 +1384,7 @@ namespace Battle.netMobileAuthenticator
             // metroLabel11
             // 
             this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(13, 398);
+            this.metroLabel11.Location = new System.Drawing.Point(13, 394);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(79, 19);
             this.metroLabel11.TabIndex = 20;
@@ -975,6 +1621,83 @@ namespace Battle.netMobileAuthenticator
             this.metroTabPage_SaveListSetting.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage_SaveListSetting.VerticalScrollbarSize = 10;
             // 
+            // tabPage_CloudConfig
+            // 
+            this.tabPage_CloudConfig.Controls.Add(this.tabControl_CloudConfig);
+            this.tabPage_CloudConfig.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_CloudConfig.Name = "tabPage_CloudConfig";
+            this.tabPage_CloudConfig.Size = new System.Drawing.Size(429, 354);
+            this.tabPage_CloudConfig.TabIndex = 3;
+            this.tabPage_CloudConfig.Text = "Cloud";
+            this.tabPage_CloudConfig.UseVisualStyleBackColor = true;
+            // 
+            // tabControl_CloudConfig
+            // 
+            this.tabControl_CloudConfig.Controls.Add(this.tabPage_LoginQQ);
+            this.tabControl_CloudConfig.Controls.Add(this.tabPage2);
+            this.tabControl_CloudConfig.Location = new System.Drawing.Point(3, 3);
+            this.tabControl_CloudConfig.Name = "tabControl_CloudConfig";
+            this.tabControl_CloudConfig.SelectedIndex = 0;
+            this.tabControl_CloudConfig.Size = new System.Drawing.Size(426, 351);
+            this.tabControl_CloudConfig.TabIndex = 0;
+            // 
+            // tabPage_LoginQQ
+            // 
+            this.tabPage_LoginQQ.Controls.Add(this.metroButton3);
+            this.tabPage_LoginQQ.Controls.Add(this.metroLabel_FunctionDescription);
+            this.tabPage_LoginQQ.Controls.Add(this.pictureBox_QQ);
+            this.tabPage_LoginQQ.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_LoginQQ.Name = "tabPage_LoginQQ";
+            this.tabPage_LoginQQ.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_LoginQQ.Size = new System.Drawing.Size(418, 325);
+            this.tabPage_LoginQQ.TabIndex = 0;
+            this.tabPage_LoginQQ.Text = "未登录QQ";
+            this.tabPage_LoginQQ.UseVisualStyleBackColor = true;
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton3.Highlight = true;
+            this.metroButton3.Location = new System.Drawing.Point(118, 218);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(82, 28);
+            this.metroButton3.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton3.TabIndex = 11;
+            this.metroButton3.Text = "新建安全令";
+            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton3.UseSelectable = true;
+            // 
+            // metroLabel_FunctionDescription
+            // 
+            this.metroLabel_FunctionDescription.AutoSize = true;
+            this.metroLabel_FunctionDescription.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel_FunctionDescription.Location = new System.Drawing.Point(51, 140);
+            this.metroLabel_FunctionDescription.Name = "metroLabel_FunctionDescription";
+            this.metroLabel_FunctionDescription.Size = new System.Drawing.Size(313, 75);
+            this.metroLabel_FunctionDescription.TabIndex = 4;
+            this.metroLabel_FunctionDescription.Text = "请登录QQ后再点击刷新按钮以使用云端配置功能\r\n如登录多个QQ，请退出其他QQ只保留一个QQ后点击刷新\r\n使用QQ账号来作为使用者的云端配置上传/下载的凭据\r\n\r" +
+    "\n";
+            this.metroLabel_FunctionDescription.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.metroLabel_FunctionDescription.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // pictureBox_QQ
+            // 
+            this.pictureBox_QQ.Location = new System.Drawing.Point(154, 40);
+            this.pictureBox_QQ.Name = "pictureBox_QQ";
+            this.pictureBox_QQ.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox_QQ.TabIndex = 0;
+            this.pictureBox_QQ.TabStop = false;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(418, 325);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // authenticatorTimer
             // 
             this.authenticatorTimer.Interval = 500;
@@ -1031,7 +1754,7 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_SaveList.IsRadius = false;
             this.ucBtnImg_SaveList.IsShowRect = false;
             this.ucBtnImg_SaveList.IsShowTips = false;
-            this.ucBtnImg_SaveList.Location = new System.Drawing.Point(0, 74);
+            this.ucBtnImg_SaveList.Location = new System.Drawing.Point(0, 70);
             this.ucBtnImg_SaveList.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnImg_SaveList.Name = "ucBtnImg_SaveList";
             this.ucBtnImg_SaveList.RectColor = System.Drawing.Color.White;
@@ -1063,7 +1786,7 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_Setting.IsRadius = false;
             this.ucBtnImg_Setting.IsShowRect = false;
             this.ucBtnImg_Setting.IsShowTips = false;
-            this.ucBtnImg_Setting.Location = new System.Drawing.Point(0, 126);
+            this.ucBtnImg_Setting.Location = new System.Drawing.Point(0, 123);
             this.ucBtnImg_Setting.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnImg_Setting.Name = "ucBtnImg_Setting";
             this.ucBtnImg_Setting.RectColor = System.Drawing.Color.White;
@@ -1076,11 +1799,60 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_Setting.TipsText = "";
             this.ucBtnImg_Setting.BtnClick += new System.EventHandler(this.ucBtnImg_Setting_BtnClick);
             // 
+            // ucBtnImg_CloudConfig
+            // 
+            this.ucBtnImg_CloudConfig.BackColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.BtnFont = new System.Drawing.Font("微软雅黑", 17F);
+            this.ucBtnImg_CloudConfig.BtnForeColor = System.Drawing.Color.Red;
+            this.ucBtnImg_CloudConfig.BtnText = "";
+            this.ucBtnImg_CloudConfig.ConerRadius = 5;
+            this.ucBtnImg_CloudConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnImg_CloudConfig.EnabledMouseEffect = false;
+            this.ucBtnImg_CloudConfig.FillColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnImg_CloudConfig.ForeColor = System.Drawing.Color.Red;
+            this.ucBtnImg_CloudConfig.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.ucBtnImg_CloudConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ucBtnImg_CloudConfig.ImageFontIcons = null;
+            this.ucBtnImg_CloudConfig.IsRadius = false;
+            this.ucBtnImg_CloudConfig.IsShowRect = false;
+            this.ucBtnImg_CloudConfig.IsShowTips = false;
+            this.ucBtnImg_CloudConfig.Location = new System.Drawing.Point(0, 176);
+            this.ucBtnImg_CloudConfig.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnImg_CloudConfig.Name = "ucBtnImg_CloudConfig";
+            this.ucBtnImg_CloudConfig.RectColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.RectWidth = 1;
+            this.ucBtnImg_CloudConfig.Size = new System.Drawing.Size(44, 50);
+            this.ucBtnImg_CloudConfig.TabIndex = 5;
+            this.ucBtnImg_CloudConfig.TabStop = false;
+            this.ucBtnImg_CloudConfig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ucBtnImg_CloudConfig.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnImg_CloudConfig.TipsText = "";
+            this.ucBtnImg_CloudConfig.BtnClick += new System.EventHandler(this.ucBtnImg_CloudConfig_BtnClick);
+            // 
+            // Auth1Timer
+            // 
+            this.Auth1Timer.Enabled = true;
+            this.Auth1Timer.Interval = 500;
+            this.Auth1Timer.Tick += new System.EventHandler(this.Auth1Timer_Tick);
+            // 
+            // Auth3Timer
+            // 
+            this.Auth3Timer.Enabled = true;
+            this.Auth3Timer.Tick += new System.EventHandler(this.Auth3Timer_Tick);
+            // 
+            // Auth2Timer
+            // 
+            this.Auth2Timer.Enabled = true;
+            this.Auth2Timer.Tick += new System.EventHandler(this.Auth2Timer_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 381);
+            this.Controls.Add(this.ucBtnImg_CloudConfig);
             this.Controls.Add(this.tabControl_Main);
             this.Controls.Add(this.ucSplitLine_V1);
             this.Controls.Add(this.ucBtnImg_Index);
@@ -1097,14 +1869,42 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_Create.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_History)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Region)).EndInit();
+            this.tabPage_SaveList.ResumeLayout(false);
+            this.tabControl_SaveList.ResumeLayout(false);
+            this.tabPage_SaveListEx.ResumeLayout(false);
+            this.panel_auth3.ResumeLayout(false);
+            this.panel_auth3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3copy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial3)).EndInit();
+            this.panel_auth2.ResumeLayout(false);
+            this.panel_auth2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2copy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial2)).EndInit();
+            this.panel_auth1.ResumeLayout(false);
+            this.panel_auth1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1copy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.tabPage_Setting.ResumeLayout(false);
             this.metroTabControl_Setting.ResumeLayout(false);
             this.metroTabPage_CreateRestoreSetting.ResumeLayout(false);
             this.metroTabPage_CreateRestoreSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NewCodeAutoCopy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_AutoIdentifyCustomFormatInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatCheck)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_CopyCustomFormatInfo)).EndInit();
+            this.tabPage_CloudConfig.ResumeLayout(false);
+            this.tabControl_CloudConfig.ResumeLayout(false);
+            this.tabPage_LoginQQ.ResumeLayout(false);
+            this.tabPage_LoginQQ.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_QQ)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1118,7 +1918,6 @@ namespace Battle.netMobileAuthenticator
         private System.Windows.Forms.TabControl tabControl_Main;
         private System.Windows.Forms.TabPage tabPage_Create;
         private System.Windows.Forms.TabPage tabPage_SaveList;
-        private System.Windows.Forms.TabPage tabPage_Setting;
         private MetroFramework.Controls.MetroTextBox metroTextBox_Serial;
         private System.Windows.Forms.PictureBox pictureBox_Region;
         private MetroFramework.Controls.MetroLabel metroLabel1;
@@ -1136,45 +1935,98 @@ namespace Battle.netMobileAuthenticator
         private System.Windows.Forms.PictureBox pictureBox_History;
         private MetroFramework.Controls.MetroComboBox metroComboBox_History;
         private System.Windows.Forms.Timer authenticatorTimer;
+        private MetroFramework.Controls.MetroComboBox metroComboBox_Region;
+        private System.Windows.Forms.TabPage tabPage_CloudConfig;
+        private System.Windows.Forms.TabControl tabControl_CloudConfig;
+        private System.Windows.Forms.TabPage tabPage_LoginQQ;
+        private System.Windows.Forms.TabPage tabPage2;
+        private HZH_Controls.Controls.UCBtnImg ucBtnImg_CloudConfig;
+        private System.Windows.Forms.PictureBox pictureBox_QQ;
+        private MetroFramework.Controls.MetroLabel metroLabel_FunctionDescription;
+        private MetroFramework.Controls.MetroButton metroButton3;
+        private System.Windows.Forms.TabPage tabPage_Setting;
         private MetroFramework.Controls.MetroTabControl metroTabControl_Setting;
         private MetroFramework.Controls.MetroTabPage metroTabPage_GlobalSetting;
         private MetroFramework.Controls.MetroTabPage metroTabPage_CreateRestoreSetting;
-        private MetroFramework.Controls.MetroTabPage metroTabPage_SaveListSetting;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H3;
-        private MetroFramework.Controls.MetroComboBox metroComboBox_RegionSetting;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox_History;
-        private MetroFramework.Controls.MetroComboBox metroComboBox_HistoryMaxNum;
-        private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
-        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H4;
-        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox_NewCodeAutoCopy;
+        private System.Windows.Forms.PictureBox pictureBox_NewCodeAutoCopy;
+        private MetroFramework.Controls.MetroLabel metroLabel16;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox_AutoIdentifyCustomFormatInfo;
+        private MetroFramework.Controls.MetroTextBox metroTextBox_IdentifyCustomFormot;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox_MonitorClipboard;
+        private MetroFramework.Controls.MetroLabel metroLabel15;
+        private System.Windows.Forms.PictureBox pictureBox_CopyCustomFormatCheck;
+        private System.Windows.Forms.PictureBox pictureBox_CopyCustomFormatInfo;
+        private MetroFramework.Controls.MetroTextBox MetroTextBox_CopyCustomFormat;
+        private MetroFramework.Controls.MetroLabel metroLabel14;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H8;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private MetroFramework.Controls.MetroButton metroButton_DeleteData;
+        private MetroFramework.Controls.MetroButton metroButton_RestoreSettings;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H7;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox_NewCodeToast;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H6;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroComboBox metroComboBox_AutoIdentifyFormot;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox_AutoIdentify;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H5;
-        private MetroFramework.Controls.MetroComboBox metroComboBox_AutoIdentifyFormot;
-        private MetroFramework.Controls.MetroLabel metroLabel11;
-        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H6;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox_NewCodeToast;
-        private MetroFramework.Controls.MetroLabel metroLabel12;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H7;
-        private MetroFramework.Controls.MetroLabel metroLabel13;
-        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H8;
-        private MetroFramework.Controls.MetroComboBox metroComboBox_Region;
-        private MetroFramework.Controls.MetroLabel metroLabel14;
         private MetroFramework.Controls.MetroComboBox metroComboBox_AutoCopy;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox_AutoCopy;
-        private MetroFramework.Controls.MetroTextBox MetroTextBox_CopyCustomFormat;
-        private System.Windows.Forms.PictureBox pictureBox_CopyCustomFormatInfo;
-        private System.Windows.Forms.PictureBox pictureBox_CopyCustomFormatCheck;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox_MonitorClipboard;
-        private MetroFramework.Controls.MetroLabel metroLabel15;
-        private MetroFramework.Controls.MetroTextBox metroTextBox_IdentifyCustomFormot;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H4;
+        private MetroFramework.Controls.MetroComboBox metroComboBox_HistoryMaxNum;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox_History;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroComboBox metroComboBox_RegionSetting;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroTabPage metroTabPage_SaveListSetting;
+        private System.Windows.Forms.TabControl tabControl_SaveList;
+        private System.Windows.Forms.TabPage tabPage_SaveListEx;
+        private System.Windows.Forms.TabPage tabPage3;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H9;
+        private HZH_Controls.Controls.UCSplitLine_H ucSplitLine_H10;
+        private System.Windows.Forms.Timer Auth1Timer;
+        private System.Windows.Forms.Timer Auth3Timer;
+        private System.Windows.Forms.Timer Auth2Timer;
+        private CircularProgressBar.CircularProgressBar circularProgressBar3;
+        private System.Windows.Forms.Panel panel_auth1;
+        private CircularProgressBar.CircularProgressBar circularProgressBar_auth1;
+        private MetroFramework.Controls.MetroLabel metroLabel_auth1name;
+        private MetroFramework.Controls.MetroLabel metroLabel19;
+        private MetroFramework.Controls.MetroLabel metroLabel20;
+        private MetroFramework.Controls.MetroLabel metroLabel21;
+        private MetroFramework.Controls.MetroLabel metroLabel22;
+        private MetroFramework.Controls.MetroLabel metroLabel23;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode1;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListSerial1;
+        private System.Windows.Forms.PictureBox pictureBox_auth1edit;
+        private System.Windows.Forms.PictureBox pictureBox_auth1copy;
+        private System.Windows.Forms.Panel panel_auth2;
+        private System.Windows.Forms.PictureBox pictureBox_auth2copy;
+        private System.Windows.Forms.PictureBox pictureBox_auth2edit;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode2;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListSerial2;
+        private MetroFramework.Controls.MetroLabel metroLabel17;
+        private MetroFramework.Controls.MetroLabel metroLabel18;
+        private MetroFramework.Controls.MetroLabel metroLabel24;
+        private MetroFramework.Controls.MetroLabel metroLabel25;
+        private CircularProgressBar.CircularProgressBar circularProgressBar1;
+        private System.Windows.Forms.Panel panel_auth3;
+        private System.Windows.Forms.PictureBox pictureBox_auth3copy;
+        private System.Windows.Forms.PictureBox pictureBox_auth3edit;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode3;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListSerial3;
+        private MetroFramework.Controls.MetroLabel metroLabel26;
+        private MetroFramework.Controls.MetroLabel metroLabel27;
+        private MetroFramework.Controls.MetroLabel metroLabel28;
+        private MetroFramework.Controls.MetroLabel metroLabel29;
+        private CircularProgressBar.CircularProgressBar circularProgressBar2;
     }
 }

@@ -318,7 +318,14 @@ namespace Battle.netMobileAuthenticator
         default:
           throw new InvalidHMACAlgorithmException();
       }
-      hmac.Init(new KeyParameter(SecretKey));
+            try
+            {
+                hmac.Init(new KeyParameter(SecretKey));
+            }
+      catch
+            {
+                throw new InvalidHMACAlgorithmException();
+            }
 
       byte[] codeIntervalArray = BitConverter.GetBytes(CodeInterval);
       if (BitConverter.IsLittleEndian)

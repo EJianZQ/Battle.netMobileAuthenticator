@@ -39,6 +39,8 @@ namespace Battle.netMobileAuthenticator
 
         public bool NewCodeToastEnabled { get; set; }
 
+        public bool NewCodeAutoCopyEnabled { get; set; }
+
         /// <summary>
         /// SettingManager类读取Config并初始化
         /// </summary>
@@ -85,6 +87,7 @@ namespace Battle.netMobileAuthenticator
 
             #region 验证码推送
             NewCodeToastEnabled = Read(SettingType.CreateRestore, "NewCodeToastEnabled") is "True" ? true : false;
+            NewCodeAutoCopyEnabled = Read(SettingType.CreateRestore, "NewCodeAutoCopyEnabled") is "True" ? true : false;
             #endregion
         }
 

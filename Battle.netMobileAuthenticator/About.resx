@@ -1183,7 +1183,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/.
     <value>450, 459</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>首次使用</value>
+    <value>关于</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>About</value>

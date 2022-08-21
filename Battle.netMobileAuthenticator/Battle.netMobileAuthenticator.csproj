@@ -75,6 +75,7 @@
     <Compile Include="ClipTest.Designer.cs">
       <DependentUpon>ClipTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeepCopy.cs" />
     <Compile Include="HistoryManager.cs" />
     <Compile Include="About.cs">
       <SubType>Form</SubType>
@@ -109,6 +110,12 @@
       <DependentUpon>ResourceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SaveListManager.cs" />
+    <Compile Include="SaveListNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveListNameForm.Designer.cs">
+      <DependentUpon>SaveListNameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SettingManager.cs" />
     <Compile Include="Toast.cs" />
     <Compile Include="WinAPI.cs" />
@@ -132,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResourceForm.resx">
       <DependentUpon>ResourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveListNameForm.resx">
+      <DependentUpon>SaveListNameForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>

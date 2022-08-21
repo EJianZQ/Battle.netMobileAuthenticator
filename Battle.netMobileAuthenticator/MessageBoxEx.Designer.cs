@@ -91,6 +91,7 @@ namespace Battle.netMobileAuthenticator
             this.MinimizeBox = false;
             this.Name = "MessageBoxEx";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "MessageBox";
             this.buttonPanel.ResumeLayout(false);
             this.ResumeLayout(false);

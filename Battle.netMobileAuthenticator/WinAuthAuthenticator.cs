@@ -17,10 +17,11 @@ namespace Battle.netMobileAuthenticator
     void OnWinAuthAuthenticatorChanged(WinAuthAuthenticator sender, WinAuthAuthenticatorChangedEventArgs e);
   }
 
-  /// <summary>
-  /// Wrapper for real authenticator data used to save to file with other application information
-  /// </summary>
-  public class WinAuthAuthenticator : ICloneable
+    /// <summary>
+    /// Wrapper for real authenticator data used to save to file with other application information
+    /// </summary>
+    [Serializable]
+    public class WinAuthAuthenticator : ICloneable
   {
     /// <summary>
     /// Event handler fired when property is changed

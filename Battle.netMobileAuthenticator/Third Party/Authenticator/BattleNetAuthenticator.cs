@@ -30,6 +30,7 @@ namespace Battle.netMobileAuthenticator
 	/// <summary>
 	/// Class that implements Battle.net Mobile Authenticator v1.1.0.
 	/// </summary>
+	[Serializable]
 	public class BattleNetAuthenticator : Authenticator
 	{
 		/// <summary>

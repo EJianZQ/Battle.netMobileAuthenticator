@@ -48,6 +48,8 @@ namespace Battle.netMobileAuthenticator
         public WinAuthAuthenticator Authenticator { get; set; }
         BattleNetAuthenticator authenticator = new BattleNetAuthenticator();
         public HistoryRecords history = new HistoryRecords();
+        public SaveListRecords savelist = new SaveListRecords();
+        public List<WinAuthAuthenticator> SaveListAuthenticators = new List<WinAuthAuthenticator>();
         public static SettingManager smg;
         //private object _newAuthenticatorLocker = new object();
         private readonly object _historyHandle = new object();
@@ -56,6 +58,7 @@ namespace Battle.netMobileAuthenticator
         IntPtr nextClipboardViewer;//剪切板观察链
         Image[] blackIcon = new Image[4] { FontImages.GetImage(FontIcons.A_fa_shield, 36, Color.Black) , FontImages.GetImage(FontIcons.A_fa_list, 36, Color.Black), FontImages.GetImage(FontIcons.A_fa_cogs, 36, Color.Black) , FontImages.GetImage(FontIcons.A_fa_sellsy, 36, Color.Black) };
         Image[] blueIcon = new Image[4] { FontImages.GetImage(FontIcons.A_fa_shield, 36, Color.FromArgb(0, 174, 219)), FontImages.GetImage(FontIcons.A_fa_list, 36, Color.FromArgb(0, 174, 219)), FontImages.GetImage(FontIcons.A_fa_cogs, 36, Color.FromArgb(0, 174, 219)) , FontImages.GetImage(FontIcons.A_fa_sellsy, 36, Color.FromArgb(0, 174, 219)) };
+        Image[] commonIcon = new Image[4] { FontImages.GetImage(FontIcons.A_fa_bars, 20, Color.FromArgb(80, 80, 80)), FontImages.GetImage(FontIcons.A_fa_undo, 20, Color.FromArgb(80, 80, 80)) , FontImages.GetImage(FontIcons.A_fa_pencil, 20, Color.FromArgb(80, 80, 80)) , FontImages.GetImage(FontIcons.A_fa_clone, 20, Color.FromArgb(80, 80, 80)) };
         public MainForm()
         {
             InitializeComponent();
@@ -188,10 +191,10 @@ namespace Battle.netMobileAuthenticator
                 metroTextBox_RestoreCode.Icon = FontImages.GetImage(FontIcons.A_fa_undo, 48, Color.FromArgb(102, 102, 102));
                 metroTextBox_CurrentCode.Icon = FontImages.GetImage(FontIcons.A_fa_check_circle_o, 48, Color.FromArgb(102, 102, 102));
                 pictureBox_QQ.Image = FontImages.GetImage(FontIcons.A_fa_qq, 80, Color.FromArgb(0, 174, 219));
-                pictureBox_SaveListSerial1.Image = FontImages.GetImage(FontIcons.A_fa_bars, 20, Color.FromArgb(80, 80, 80));
-                pictureBox_SaveListRestoreCode1.Image = FontImages.GetImage(FontIcons.A_fa_undo, 20, Color.FromArgb(80, 80, 80));
-                pictureBox_auth1edit.Image = FontImages.GetImage(FontIcons.A_fa_pencil, 20, Color.FromArgb(80, 80, 80));
-                pictureBox_auth1copy.Image = FontImages.GetImage(FontIcons.A_fa_clone, 20, Color.FromArgb(80, 80, 80));
+                pictureBox_SaveListSerial1.Image = commonIcon[0];
+                pictureBox_SaveListRestoreCode1.Image = commonIcon[1];
+                pictureBox_auth1edit.Image = commonIcon[2];
+                pictureBox_auth1copy.Image = commonIcon[3];
             });
             iconGetThread.Start();
             #endregion
@@ -202,7 +205,6 @@ namespace Battle.netMobileAuthenticator
             tabControl_Main.Region = new Region(new RectangleF(tabPage_Create.Left, tabPage_Create.Top, tabPage_Create.Width, tabPage_Create.Height));
             tabControl_CloudConfig.Region = new Region(new RectangleF(tabPage_LoginQQ.Left, tabPage_LoginQQ.Top, tabPage_LoginQQ.Width, tabPage_LoginQQ.Height));
             tabControl_SaveList.Region = new Region(new RectangleF(tabPage_SaveListEx.Left, tabPage_SaveListEx.Top, tabPage_SaveListEx.Width, tabPage_SaveListEx.Height));
-            metroLabel_auth1name.Text = "这里是自定义的安全令名字";
         }
 
         #region 剪切板监控与自动识别
@@ -334,6 +336,9 @@ namespace Battle.netMobileAuthenticator
             ucBtnImg_Setting.Image = blackIcon[2];
             ucBtnImg_CloudConfig.Image = blackIcon[3];
             tabControl_Main.SelectedIndex = 0;
+            if(Authenticator.AuthenticatorData != null)
+                metroTextBox_CurrentCode.Text = this.Authenticator.AuthenticatorData.CurrentCode;
+
         }
 
         private void ucBtnImg_SaveList_BtnClick(object sender, EventArgs e)
@@ -910,36 +915,41 @@ namespace Battle.netMobileAuthenticator
             }
         }
 
-        private void panel_auth1_Paint(object sender, PaintEventArgs e)
-        {
-            Panel pan = (Panel)sender;
-            float width = (float)1.0;
-            Pen pen = new Pen(SystemColors.ControlDark, width);
-            pen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            e.Graphics.DrawLine(pen, 0, 0, 0, pan.Height - 0);
-            e.Graphics.DrawLine(pen, 0, 0, pan.Width - 0, 0);
-            e.Graphics.DrawLine(pen, pan.Width - 1, pan.Height - 1, 0, pan.Height - 1);
-            e.Graphics.DrawLine(pen, pan.Width - 1, pan.Height - 1, pan.Width - 1, 0);
-        }
+
 
         private void Auth1Timer_Tick(object sender, EventArgs e)
         {
-            circularProgressBar_auth1.Value++;
-            if (circularProgressBar_auth1.Value == 30)
-                circularProgressBar_auth1.Value = 1;
+            if (SaveListAuthenticators[0] != null)
+            {
+                int time = (int)(SaveListAuthenticators[0].AuthenticatorData.ServerTime / 1000L) % 30;
+                circularProgressBar_Auth1.Value = time + 1;
+                if (time == 0)
+                    label__Auth1Code.Text = SaveListAuthenticators[0].CurrentCode;
+            }
         }
 
         private void Auth2Timer_Tick(object sender, EventArgs e)
         {
-
+            if (SaveListAuthenticators[1] != null)
+            {
+                int time = (int)(SaveListAuthenticators[1].AuthenticatorData.ServerTime / 1000L) % 30;
+                circularProgressBar_Auth2.Value = time + 1;
+                if (time == 0)
+                    label__Auth2Code.Text = SaveListAuthenticators[1].CurrentCode;
+            }
         }
 
         private void Auth3Timer_Tick(object sender, EventArgs e)
         {
-
+            if (SaveListAuthenticators[2] != null)
+            {
+                int time = (int)(SaveListAuthenticators[2].AuthenticatorData.ServerTime / 1000L) % 30;
+                circularProgressBar_Auth3.Value = time + 1;
+                if (time == 0)
+                    label__Auth3Code.Text = SaveListAuthenticators[2].CurrentCode;
+            }
         }
-
-        private void panel_auth2_Paint(object sender, PaintEventArgs e)
+        private void panel_Auth1_Paint(object sender, PaintEventArgs e)
         {
             Panel pan = (Panel)sender;
             float width = (float)1.0;
@@ -951,7 +961,7 @@ namespace Battle.netMobileAuthenticator
             e.Graphics.DrawLine(pen, pan.Width - 1, pan.Height - 1, pan.Width - 1, 0);
         }
 
-        private void panel_auth3_Paint(object sender, PaintEventArgs e)
+        private void panel_Auth2_Paint(object sender, PaintEventArgs e)
         {
             Panel pan = (Panel)sender;
             float width = (float)1.0;
@@ -963,6 +973,124 @@ namespace Battle.netMobileAuthenticator
             e.Graphics.DrawLine(pen, pan.Width - 1, pan.Height - 1, pan.Width - 1, 0);
         }
 
+        private void panel_Auth3_Paint(object sender, PaintEventArgs e)
+        {
+            Panel pan = (Panel)sender;
+            float width = (float)1.0;
+            Pen pen = new Pen(SystemColors.ControlDark, width);
+            pen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            e.Graphics.DrawLine(pen, 0, 0, 0, pan.Height - 0);
+            e.Graphics.DrawLine(pen, 0, 0, pan.Width - 0, 0);
+            e.Graphics.DrawLine(pen, pan.Width - 1, pan.Height - 1, 0, pan.Height - 1);
+            e.Graphics.DrawLine(pen, pan.Width - 1, pan.Height - 1, pan.Width - 1, 0);
+        }
 
+        private void ucBtnImg_AddList_BtnClick(object sender, EventArgs e)
+        {
+            if(Authenticator.AuthenticatorData != null)
+            {
+                SaveListNameForm form = new SaveListNameForm();
+                form.ShowDialog();
+                if(SaveListNameForm.AuthName != "nop" && SaveListNameForm.AuthName != "Test")
+                {
+                    if(savelist.Records.Count < 3 && SaveListAuthenticators.Count < 3)
+                    {
+                        savelist.Records.Add(new SaveListRecord(SaveListNameForm.AuthName, authenticator.Serial, authenticator.RestoreCode));
+                        var temp = DeepCopy.DeepCopyByBinary(this.Authenticator);
+                        SaveListAuthenticators.Add(temp);
+                        //SaveListAuthenticators.Add(this.Authenticator);
+                        if (savelist.Records.Count == SaveListAuthenticators.Count)
+                        {
+                            switch (savelist.Records.Count)
+                            {
+                                case 1:
+                                    {
+                                        if(SaveListAuthenticators[0].AuthenticatorData != null)
+                                        {
+                                            label__Auth1name.Text = savelist.Records[0].Name;
+                                            label__Auth1Serial.Text = savelist.Records[0].Serial;
+                                            label__Auth1RestoreCode.Text = savelist.Records[0].RestoreCode;
+                                            label__Auth1Code.Text = SaveListAuthenticators[0].CurrentCode;
+                                            Auth1Timer.Enabled = true;
+                                        }
+                                        else
+                                        {
+                                            MessageBoxEx messageBox = new MessageBoxEx("安全令列表第1个数据异常，重新运行软件可能会解决此问题", "常驻列表", false);
+                                            messageBox.ShowDialog();
+                                        }
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        if (SaveListAuthenticators[1].AuthenticatorData != null)
+                                        {
+                                            label__Auth2name.Text = savelist.Records[1].Name;
+                                            label__Auth2Serial.Text = savelist.Records[1].Serial;
+                                            label__Auth2RestoreCode.Text = savelist.Records[1].RestoreCode;
+                                            label__Auth2Code.Text = SaveListAuthenticators[1].CurrentCode;
+                                            pictureBox_SaveListSerial2.Image = commonIcon[0];
+                                            pictureBox_SaveListRestoreCode2.Image = commonIcon[1];
+                                            pictureBox_auth2edit.Image = commonIcon[2];
+                                            pictureBox_auth2copy.Image = commonIcon[3];
+                                            panel_Auth2.Visible = true;
+                                            Auth2Timer.Enabled = true;
+                                        }
+                                        else
+                                        {
+                                            MessageBoxEx messageBox = new MessageBoxEx("安全令列表第1个数据异常，重新运行软件可能会解决此问题", "常驻列表", false);
+                                            messageBox.ShowDialog();
+                                        }
+                                        break;
+                                    }
+                                case 3:
+                                    {
+                                        if (SaveListAuthenticators[2].AuthenticatorData != null)
+                                        {
+                                            label__Auth3name.Text = savelist.Records[2].Name;
+                                            label__Auth3Serial.Text = savelist.Records[2].Serial;
+                                            label__Auth3RestoreCode.Text = savelist.Records[2].RestoreCode;
+                                            label__Auth3Code.Text = SaveListAuthenticators[2].CurrentCode;
+                                            pictureBox_SaveListSerial3.Image = commonIcon[0];
+                                            pictureBox_SaveListRestoreCode3.Image = commonIcon[1];
+                                            pictureBox_auth3edit.Image = commonIcon[2];
+                                            pictureBox_auth3copy.Image = commonIcon[3];
+                                            panel_Auth3.Visible = true;
+                                            Auth3Timer.Enabled = true;
+                                        }
+                                        else
+                                        {
+                                            MessageBoxEx messageBox = new MessageBoxEx("安全令列表第1个数据异常，重新运行软件可能会解决此问题", "常驻列表", false);
+                                            messageBox.ShowDialog();
+                                        }
+                                        break;
+                                    }
+                                default:
+                                    {
+                                        MessageBoxEx messageBox = new MessageBoxEx("安全令列表的数量异常，重新运行软件可能会解决此问题", "常驻列表", false);
+                                        messageBox.ShowDialog();
+                                        break;
+                                    }
+                            }
+                        }
+                        else
+                        {
+                            MessageBoxEx messageBox = new MessageBoxEx("安全令String类型与实例类型数量不匹配，重新运行软件可能会解决此问题", "常驻列表", false);
+                            messageBox.ShowDialog();
+                        }
+                    }
+                    else
+                    {
+                        MessageBoxEx messageBox = new MessageBoxEx("当前常驻列表安全令数量已满\n目前只支持添加三个安全令，请删除一个后重新添加\n\n\n\n\n", "常驻列表", false);
+                        messageBox.ShowDialog();
+                    }
+                }
+                
+            }
+            else
+            {
+                MessageBoxEx messageBox = new MessageBoxEx("如果需要将当前安全令添加至常驻列表，必须先进行创建或还原操作\n只有创建或还原成功的安全令才允许被添加至常驻列表\n\n\n\n\n", "常驻列表", false);
+                messageBox.ShowDialog();
+            }
+        }
     }
 }

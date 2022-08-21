@@ -53,37 +53,17 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_SaveList = new System.Windows.Forms.TabPage();
             this.tabControl_SaveList = new System.Windows.Forms.TabControl();
             this.tabPage_SaveListEx = new System.Windows.Forms.TabPage();
-            this.panel_auth3 = new System.Windows.Forms.Panel();
-            this.pictureBox_auth3copy = new System.Windows.Forms.PictureBox();
-            this.pictureBox_auth3edit = new System.Windows.Forms.PictureBox();
-            this.pictureBox_SaveListRestoreCode3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_SaveListSerial3 = new System.Windows.Forms.PictureBox();
-            this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
-            this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
-            this.panel_auth2 = new System.Windows.Forms.Panel();
-            this.pictureBox_auth2copy = new System.Windows.Forms.PictureBox();
-            this.pictureBox_auth2edit = new System.Windows.Forms.PictureBox();
-            this.pictureBox_SaveListRestoreCode2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_SaveListSerial2 = new System.Windows.Forms.PictureBox();
-            this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel24 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel25 = new MetroFramework.Controls.MetroLabel();
-            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
-            this.panel_auth1 = new System.Windows.Forms.Panel();
+            this.panel_Auth1 = new System.Windows.Forms.Panel();
+            this.label__Auth1RestoreCode = new System.Windows.Forms.Label();
+            this.label__Auth1Serial = new System.Windows.Forms.Label();
+            this.label__Auth1name = new System.Windows.Forms.Label();
+            this.label__Auth1Code = new System.Windows.Forms.Label();
             this.pictureBox_auth1copy = new System.Windows.Forms.PictureBox();
             this.pictureBox_auth1edit = new System.Windows.Forms.PictureBox();
             this.pictureBox_SaveListRestoreCode1 = new System.Windows.Forms.PictureBox();
             this.pictureBox_SaveListSerial1 = new System.Windows.Forms.PictureBox();
-            this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel21 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel_auth1name = new MetroFramework.Controls.MetroLabel();
-            this.circularProgressBar_auth1 = new CircularProgressBar.CircularProgressBar();
+            this.circularProgressBar_Auth1 = new CircularProgressBar.CircularProgressBar();
             this.ucSplitLine_H10 = new HZH_Controls.Controls.UCSplitLine_H();
             this.ucSplitLine_H9 = new HZH_Controls.Controls.UCSplitLine_H();
             this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
@@ -140,13 +120,33 @@ namespace Battle.netMobileAuthenticator
             this.pictureBox_QQ = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.authenticatorTimer = new System.Windows.Forms.Timer(this.components);
-            this.ucBtnImg_Index = new HZH_Controls.Controls.UCBtnImg();
-            this.ucBtnImg_SaveList = new HZH_Controls.Controls.UCBtnImg();
-            this.ucBtnImg_Setting = new HZH_Controls.Controls.UCBtnImg();
-            this.ucBtnImg_CloudConfig = new HZH_Controls.Controls.UCBtnImg();
             this.Auth1Timer = new System.Windows.Forms.Timer(this.components);
             this.Auth3Timer = new System.Windows.Forms.Timer(this.components);
             this.Auth2Timer = new System.Windows.Forms.Timer(this.components);
+            this.ucBtnImg_CloudConfig = new HZH_Controls.Controls.UCBtnImg();
+            this.ucBtnImg_Index = new HZH_Controls.Controls.UCBtnImg();
+            this.ucBtnImg_SaveList = new HZH_Controls.Controls.UCBtnImg();
+            this.ucBtnImg_Setting = new HZH_Controls.Controls.UCBtnImg();
+            this.panel_Auth2 = new System.Windows.Forms.Panel();
+            this.label__Auth2RestoreCode = new System.Windows.Forms.Label();
+            this.label__Auth2Serial = new System.Windows.Forms.Label();
+            this.label__Auth2name = new System.Windows.Forms.Label();
+            this.label__Auth2Code = new System.Windows.Forms.Label();
+            this.pictureBox_auth2copy = new System.Windows.Forms.PictureBox();
+            this.pictureBox_auth2edit = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListRestoreCode2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListSerial2 = new System.Windows.Forms.PictureBox();
+            this.circularProgressBar_Auth2 = new CircularProgressBar.CircularProgressBar();
+            this.panel_Auth3 = new System.Windows.Forms.Panel();
+            this.label__Auth3RestoreCode = new System.Windows.Forms.Label();
+            this.label__Auth3Serial = new System.Windows.Forms.Label();
+            this.label__Auth3name = new System.Windows.Forms.Label();
+            this.label__Auth3Code = new System.Windows.Forms.Label();
+            this.pictureBox_auth3copy = new System.Windows.Forms.PictureBox();
+            this.pictureBox_auth3edit = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListRestoreCode3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_SaveListSerial3 = new System.Windows.Forms.PictureBox();
+            this.circularProgressBar_Auth3 = new CircularProgressBar.CircularProgressBar();
             this.tabControl_Main.SuspendLayout();
             this.tabPage_Create.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_History)).BeginInit();
@@ -154,17 +154,7 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_SaveList.SuspendLayout();
             this.tabControl_SaveList.SuspendLayout();
             this.tabPage_SaveListEx.SuspendLayout();
-            this.panel_auth3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3copy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3edit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial3)).BeginInit();
-            this.panel_auth2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2copy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2edit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial2)).BeginInit();
-            this.panel_auth1.SuspendLayout();
+            this.panel_Auth1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1copy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode1)).BeginInit();
@@ -182,6 +172,16 @@ namespace Battle.netMobileAuthenticator
             this.tabControl_CloudConfig.SuspendLayout();
             this.tabPage_LoginQQ.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_QQ)).BeginInit();
+            this.panel_Auth2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2copy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial2)).BeginInit();
+            this.panel_Auth3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3copy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial3)).BeginInit();
             this.SuspendLayout();
             // 
             // ucSplitLine_V1
@@ -319,6 +319,7 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_AddList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ucBtnImg_AddList.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.ucBtnImg_AddList.TipsText = "";
+            this.ucBtnImg_AddList.BtnClick += new System.EventHandler(this.ucBtnImg_AddList_BtnClick);
             // 
             // metroButton_Restore
             // 
@@ -517,10 +518,10 @@ namespace Battle.netMobileAuthenticator
             // 
             // tabPage_SaveListEx
             // 
-            this.tabPage_SaveListEx.Controls.Add(this.panel_auth3);
-            this.tabPage_SaveListEx.Controls.Add(this.panel_auth2);
+            this.tabPage_SaveListEx.Controls.Add(this.panel_Auth3);
+            this.tabPage_SaveListEx.Controls.Add(this.panel_Auth2);
             this.tabPage_SaveListEx.Controls.Add(this.metroLabel20);
-            this.tabPage_SaveListEx.Controls.Add(this.panel_auth1);
+            this.tabPage_SaveListEx.Controls.Add(this.panel_Auth1);
             this.tabPage_SaveListEx.Controls.Add(this.ucSplitLine_H10);
             this.tabPage_SaveListEx.Controls.Add(this.ucSplitLine_H9);
             this.tabPage_SaveListEx.Controls.Add(this.metroLabel19);
@@ -532,282 +533,6 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_SaveListEx.Text = "ListFunction";
             this.tabPage_SaveListEx.UseVisualStyleBackColor = true;
             // 
-            // panel_auth3
-            // 
-            this.panel_auth3.Controls.Add(this.pictureBox_auth3copy);
-            this.panel_auth3.Controls.Add(this.pictureBox_auth3edit);
-            this.panel_auth3.Controls.Add(this.pictureBox_SaveListRestoreCode3);
-            this.panel_auth3.Controls.Add(this.pictureBox_SaveListSerial3);
-            this.panel_auth3.Controls.Add(this.metroLabel26);
-            this.panel_auth3.Controls.Add(this.metroLabel27);
-            this.panel_auth3.Controls.Add(this.metroLabel28);
-            this.panel_auth3.Controls.Add(this.metroLabel29);
-            this.panel_auth3.Controls.Add(this.circularProgressBar2);
-            this.panel_auth3.Location = new System.Drawing.Point(23, 217);
-            this.panel_auth3.Name = "panel_auth3";
-            this.panel_auth3.Size = new System.Drawing.Size(378, 97);
-            this.panel_auth3.TabIndex = 24;
-            this.panel_auth3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_auth3_Paint);
-            // 
-            // pictureBox_auth3copy
-            // 
-            this.pictureBox_auth3copy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox_auth3copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth3copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth3copy.Location = new System.Drawing.Point(222, 62);
-            this.pictureBox_auth3copy.Name = "pictureBox_auth3copy";
-            this.pictureBox_auth3copy.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_auth3copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_auth3copy.TabIndex = 29;
-            this.pictureBox_auth3copy.TabStop = false;
-            // 
-            // pictureBox_auth3edit
-            // 
-            this.pictureBox_auth3edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox_auth3edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth3edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth3edit.Location = new System.Drawing.Point(248, 62);
-            this.pictureBox_auth3edit.Name = "pictureBox_auth3edit";
-            this.pictureBox_auth3edit.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_auth3edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_auth3edit.TabIndex = 28;
-            this.pictureBox_auth3edit.TabStop = false;
-            // 
-            // pictureBox_SaveListRestoreCode3
-            // 
-            this.pictureBox_SaveListRestoreCode3.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListRestoreCode3.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListRestoreCode3.Location = new System.Drawing.Point(12, 60);
-            this.pictureBox_SaveListRestoreCode3.Name = "pictureBox_SaveListRestoreCode3";
-            this.pictureBox_SaveListRestoreCode3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox_SaveListRestoreCode3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_SaveListRestoreCode3.TabIndex = 27;
-            this.pictureBox_SaveListRestoreCode3.TabStop = false;
-            // 
-            // pictureBox_SaveListSerial3
-            // 
-            this.pictureBox_SaveListSerial3.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListSerial3.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListSerial3.Location = new System.Drawing.Point(12, 33);
-            this.pictureBox_SaveListSerial3.Name = "pictureBox_SaveListSerial3";
-            this.pictureBox_SaveListSerial3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox_SaveListSerial3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_SaveListSerial3.TabIndex = 26;
-            this.pictureBox_SaveListSerial3.TabStop = false;
-            // 
-            // metroLabel26
-            // 
-            this.metroLabel26.AutoSize = true;
-            this.metroLabel26.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel26.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel26.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel26.Location = new System.Drawing.Point(274, 58);
-            this.metroLabel26.Name = "metroLabel26";
-            this.metroLabel26.Size = new System.Drawing.Size(92, 25);
-            this.metroLabel26.TabIndex = 25;
-            this.metroLabel26.Text = "67358566";
-            // 
-            // metroLabel27
-            // 
-            this.metroLabel27.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel27.Location = new System.Drawing.Point(35, 63);
-            this.metroLabel27.Name = "metroLabel27";
-            this.metroLabel27.Size = new System.Drawing.Size(87, 19);
-            this.metroLabel27.TabIndex = 24;
-            this.metroLabel27.Text = "B8Z8P6BUG3";
-            // 
-            // metroLabel28
-            // 
-            this.metroLabel28.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel28.Location = new System.Drawing.Point(35, 36);
-            this.metroLabel28.Name = "metroLabel28";
-            this.metroLabel28.Size = new System.Drawing.Size(124, 19);
-            this.metroLabel28.TabIndex = 23;
-            this.metroLabel28.Text = "CN-2105-1480-1275";
-            // 
-            // metroLabel29
-            // 
-            this.metroLabel29.AutoSize = true;
-            this.metroLabel29.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel29.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel29.Location = new System.Drawing.Point(12, 10);
-            this.metroLabel29.Name = "metroLabel29";
-            this.metroLabel29.Size = new System.Drawing.Size(93, 19);
-            this.metroLabel29.TabIndex = 20;
-            this.metroLabel29.Text = "辣条的安全令";
-            // 
-            // circularProgressBar2
-            // 
-            this.circularProgressBar2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar2.AnimationSpeed = 500;
-            this.circularProgressBar2.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
-            this.circularProgressBar2.InnerMargin = 0;
-            this.circularProgressBar2.InnerWidth = 0;
-            this.circularProgressBar2.Location = new System.Drawing.Point(335, 20);
-            this.circularProgressBar2.MarqueeAnimationSpeed = 1000;
-            this.circularProgressBar2.Maximum = 30;
-            this.circularProgressBar2.Minimum = 1;
-            this.circularProgressBar2.Name = "circularProgressBar2";
-            this.circularProgressBar2.OuterColor = System.Drawing.SystemColors.ButtonShadow;
-            this.circularProgressBar2.OuterMargin = 0;
-            this.circularProgressBar2.OuterWidth = 1;
-            this.circularProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.circularProgressBar2.ProgressWidth = -1;
-            this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularProgressBar2.Size = new System.Drawing.Size(31, 29);
-            this.circularProgressBar2.StartAngle = 270;
-            this.circularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
-            this.circularProgressBar2.SubscriptText = "";
-            this.circularProgressBar2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.circularProgressBar2.SuperscriptMargin = new System.Windows.Forms.Padding(0);
-            this.circularProgressBar2.SuperscriptText = "";
-            this.circularProgressBar2.TabIndex = 19;
-            this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.circularProgressBar2.Value = 1;
-            // 
-            // panel_auth2
-            // 
-            this.panel_auth2.Controls.Add(this.pictureBox_auth2copy);
-            this.panel_auth2.Controls.Add(this.pictureBox_auth2edit);
-            this.panel_auth2.Controls.Add(this.pictureBox_SaveListRestoreCode2);
-            this.panel_auth2.Controls.Add(this.pictureBox_SaveListSerial2);
-            this.panel_auth2.Controls.Add(this.metroLabel17);
-            this.panel_auth2.Controls.Add(this.metroLabel18);
-            this.panel_auth2.Controls.Add(this.metroLabel24);
-            this.panel_auth2.Controls.Add(this.metroLabel25);
-            this.panel_auth2.Controls.Add(this.circularProgressBar1);
-            this.panel_auth2.Location = new System.Drawing.Point(23, 105);
-            this.panel_auth2.Name = "panel_auth2";
-            this.panel_auth2.Size = new System.Drawing.Size(378, 97);
-            this.panel_auth2.TabIndex = 23;
-            this.panel_auth2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_auth2_Paint);
-            // 
-            // pictureBox_auth2copy
-            // 
-            this.pictureBox_auth2copy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox_auth2copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth2copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth2copy.Location = new System.Drawing.Point(222, 62);
-            this.pictureBox_auth2copy.Name = "pictureBox_auth2copy";
-            this.pictureBox_auth2copy.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_auth2copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_auth2copy.TabIndex = 29;
-            this.pictureBox_auth2copy.TabStop = false;
-            // 
-            // pictureBox_auth2edit
-            // 
-            this.pictureBox_auth2edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox_auth2edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth2edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_auth2edit.Location = new System.Drawing.Point(248, 62);
-            this.pictureBox_auth2edit.Name = "pictureBox_auth2edit";
-            this.pictureBox_auth2edit.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox_auth2edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_auth2edit.TabIndex = 28;
-            this.pictureBox_auth2edit.TabStop = false;
-            // 
-            // pictureBox_SaveListRestoreCode2
-            // 
-            this.pictureBox_SaveListRestoreCode2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListRestoreCode2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListRestoreCode2.Location = new System.Drawing.Point(12, 60);
-            this.pictureBox_SaveListRestoreCode2.Name = "pictureBox_SaveListRestoreCode2";
-            this.pictureBox_SaveListRestoreCode2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox_SaveListRestoreCode2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_SaveListRestoreCode2.TabIndex = 27;
-            this.pictureBox_SaveListRestoreCode2.TabStop = false;
-            // 
-            // pictureBox_SaveListSerial2
-            // 
-            this.pictureBox_SaveListSerial2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListSerial2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.pictureBox_SaveListSerial2.Location = new System.Drawing.Point(12, 33);
-            this.pictureBox_SaveListSerial2.Name = "pictureBox_SaveListSerial2";
-            this.pictureBox_SaveListSerial2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox_SaveListSerial2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_SaveListSerial2.TabIndex = 26;
-            this.pictureBox_SaveListSerial2.TabStop = false;
-            // 
-            // metroLabel17
-            // 
-            this.metroLabel17.AutoSize = true;
-            this.metroLabel17.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel17.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel17.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel17.Location = new System.Drawing.Point(274, 58);
-            this.metroLabel17.Name = "metroLabel17";
-            this.metroLabel17.Size = new System.Drawing.Size(92, 25);
-            this.metroLabel17.TabIndex = 25;
-            this.metroLabel17.Text = "67358566";
-            // 
-            // metroLabel18
-            // 
-            this.metroLabel18.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel18.Location = new System.Drawing.Point(35, 63);
-            this.metroLabel18.Name = "metroLabel18";
-            this.metroLabel18.Size = new System.Drawing.Size(87, 19);
-            this.metroLabel18.TabIndex = 24;
-            this.metroLabel18.Text = "B8Z8P6BUG3";
-            // 
-            // metroLabel24
-            // 
-            this.metroLabel24.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel24.Location = new System.Drawing.Point(35, 36);
-            this.metroLabel24.Name = "metroLabel24";
-            this.metroLabel24.Size = new System.Drawing.Size(124, 19);
-            this.metroLabel24.TabIndex = 23;
-            this.metroLabel24.Text = "CN-2105-1480-1275";
-            // 
-            // metroLabel25
-            // 
-            this.metroLabel25.AutoSize = true;
-            this.metroLabel25.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel25.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel25.Location = new System.Drawing.Point(12, 10);
-            this.metroLabel25.Name = "metroLabel25";
-            this.metroLabel25.Size = new System.Drawing.Size(93, 19);
-            this.metroLabel25.TabIndex = 20;
-            this.metroLabel25.Text = "辣条的安全令";
-            // 
-            // circularProgressBar1
-            // 
-            this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar1.AnimationSpeed = 500;
-            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
-            this.circularProgressBar1.InnerMargin = 0;
-            this.circularProgressBar1.InnerWidth = 0;
-            this.circularProgressBar1.Location = new System.Drawing.Point(335, 20);
-            this.circularProgressBar1.MarqueeAnimationSpeed = 1000;
-            this.circularProgressBar1.Maximum = 30;
-            this.circularProgressBar1.Minimum = 1;
-            this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.SystemColors.ButtonShadow;
-            this.circularProgressBar1.OuterMargin = 0;
-            this.circularProgressBar1.OuterWidth = 1;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.circularProgressBar1.ProgressWidth = -1;
-            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularProgressBar1.Size = new System.Drawing.Size(31, 29);
-            this.circularProgressBar1.StartAngle = 270;
-            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
-            this.circularProgressBar1.SubscriptText = "";
-            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(0);
-            this.circularProgressBar1.SuperscriptText = "";
-            this.circularProgressBar1.TabIndex = 19;
-            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.circularProgressBar1.Value = 1;
-            // 
             // metroLabel20
             // 
             this.metroLabel20.Location = new System.Drawing.Point(76, 147);
@@ -816,22 +541,58 @@ namespace Battle.netMobileAuthenticator
             this.metroLabel20.TabIndex = 22;
             this.metroLabel20.Text = "当前位置未添加一个已创建或还原的安全令";
             // 
-            // panel_auth1
+            // panel_Auth1
             // 
-            this.panel_auth1.Controls.Add(this.pictureBox_auth1copy);
-            this.panel_auth1.Controls.Add(this.pictureBox_auth1edit);
-            this.panel_auth1.Controls.Add(this.pictureBox_SaveListRestoreCode1);
-            this.panel_auth1.Controls.Add(this.pictureBox_SaveListSerial1);
-            this.panel_auth1.Controls.Add(this.metroLabel23);
-            this.panel_auth1.Controls.Add(this.metroLabel22);
-            this.panel_auth1.Controls.Add(this.metroLabel21);
-            this.panel_auth1.Controls.Add(this.metroLabel_auth1name);
-            this.panel_auth1.Controls.Add(this.circularProgressBar_auth1);
-            this.panel_auth1.Location = new System.Drawing.Point(23, 3);
-            this.panel_auth1.Name = "panel_auth1";
-            this.panel_auth1.Size = new System.Drawing.Size(378, 90);
-            this.panel_auth1.TabIndex = 6;
-            this.panel_auth1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_auth1_Paint);
+            this.panel_Auth1.Controls.Add(this.label__Auth1RestoreCode);
+            this.panel_Auth1.Controls.Add(this.label__Auth1Serial);
+            this.panel_Auth1.Controls.Add(this.label__Auth1name);
+            this.panel_Auth1.Controls.Add(this.label__Auth1Code);
+            this.panel_Auth1.Controls.Add(this.pictureBox_auth1copy);
+            this.panel_Auth1.Controls.Add(this.pictureBox_auth1edit);
+            this.panel_Auth1.Controls.Add(this.pictureBox_SaveListRestoreCode1);
+            this.panel_Auth1.Controls.Add(this.pictureBox_SaveListSerial1);
+            this.panel_Auth1.Controls.Add(this.circularProgressBar_Auth1);
+            this.panel_Auth1.Location = new System.Drawing.Point(23, 3);
+            this.panel_Auth1.Name = "panel_Auth1";
+            this.panel_Auth1.Size = new System.Drawing.Size(378, 90);
+            this.panel_Auth1.TabIndex = 6;
+            this.panel_Auth1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Auth1_Paint);
+            // 
+            // label__Auth1RestoreCode
+            // 
+            this.label__Auth1RestoreCode.Font = new System.Drawing.Font("微软雅黑 Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth1RestoreCode.Location = new System.Drawing.Point(38, 63);
+            this.label__Auth1RestoreCode.Name = "label__Auth1RestoreCode";
+            this.label__Auth1RestoreCode.Size = new System.Drawing.Size(91, 23);
+            this.label__Auth1RestoreCode.TabIndex = 33;
+            this.label__Auth1RestoreCode.Text = "8888888888";
+            // 
+            // label__Auth1Serial
+            // 
+            this.label__Auth1Serial.Font = new System.Drawing.Font("微软雅黑 Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth1Serial.Location = new System.Drawing.Point(38, 34);
+            this.label__Auth1Serial.Name = "label__Auth1Serial";
+            this.label__Auth1Serial.Size = new System.Drawing.Size(142, 23);
+            this.label__Auth1Serial.TabIndex = 32;
+            this.label__Auth1Serial.Text = "CN-8888-8888-8888";
+            // 
+            // label__Auth1name
+            // 
+            this.label__Auth1name.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth1name.Location = new System.Drawing.Point(13, 8);
+            this.label__Auth1name.Name = "label__Auth1name";
+            this.label__Auth1name.Size = new System.Drawing.Size(307, 23);
+            this.label__Auth1name.TabIndex = 31;
+            this.label__Auth1name.Text = "辣条的安全令";
+            // 
+            // label__Auth1Code
+            // 
+            this.label__Auth1Code.Font = new System.Drawing.Font("微软雅黑", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth1Code.Location = new System.Drawing.Point(274, 60);
+            this.label__Auth1Code.Name = "label__Auth1Code";
+            this.label__Auth1Code.Size = new System.Drawing.Size(92, 23);
+            this.label__Auth1Code.TabIndex = 30;
+            this.label__Auth1Code.Text = "88888888";
             // 
             // pictureBox_auth1copy
             // 
@@ -879,80 +640,39 @@ namespace Battle.netMobileAuthenticator
             this.pictureBox_SaveListSerial1.TabIndex = 26;
             this.pictureBox_SaveListSerial1.TabStop = false;
             // 
-            // metroLabel23
+            // circularProgressBar_Auth1
             // 
-            this.metroLabel23.AutoSize = true;
-            this.metroLabel23.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel23.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel23.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel23.Location = new System.Drawing.Point(274, 58);
-            this.metroLabel23.Name = "metroLabel23";
-            this.metroLabel23.Size = new System.Drawing.Size(92, 25);
-            this.metroLabel23.TabIndex = 25;
-            this.metroLabel23.Text = "67358566";
-            // 
-            // metroLabel22
-            // 
-            this.metroLabel22.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel22.Location = new System.Drawing.Point(35, 63);
-            this.metroLabel22.Name = "metroLabel22";
-            this.metroLabel22.Size = new System.Drawing.Size(87, 19);
-            this.metroLabel22.TabIndex = 24;
-            this.metroLabel22.Text = "B8Z8P6BUG3";
-            // 
-            // metroLabel21
-            // 
-            this.metroLabel21.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel21.Location = new System.Drawing.Point(35, 36);
-            this.metroLabel21.Name = "metroLabel21";
-            this.metroLabel21.Size = new System.Drawing.Size(124, 19);
-            this.metroLabel21.TabIndex = 23;
-            this.metroLabel21.Text = "CN-2105-1480-1275";
-            // 
-            // metroLabel_auth1name
-            // 
-            this.metroLabel_auth1name.AutoSize = true;
-            this.metroLabel_auth1name.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel_auth1name.LabelMode = MetroFramework.Controls.MetroLabelMode.Selectable;
-            this.metroLabel_auth1name.Location = new System.Drawing.Point(12, 10);
-            this.metroLabel_auth1name.Name = "metroLabel_auth1name";
-            this.metroLabel_auth1name.Size = new System.Drawing.Size(93, 19);
-            this.metroLabel_auth1name.TabIndex = 20;
-            this.metroLabel_auth1name.Text = "辣条的安全令";
-            // 
-            // circularProgressBar_auth1
-            // 
-            this.circularProgressBar_auth1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularProgressBar_auth1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar_auth1.AnimationSpeed = 500;
-            this.circularProgressBar_auth1.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar_auth1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar_auth1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar_auth1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
-            this.circularProgressBar_auth1.InnerMargin = 0;
-            this.circularProgressBar_auth1.InnerWidth = 0;
-            this.circularProgressBar_auth1.Location = new System.Drawing.Point(335, 17);
-            this.circularProgressBar_auth1.MarqueeAnimationSpeed = 1000;
-            this.circularProgressBar_auth1.Maximum = 30;
-            this.circularProgressBar_auth1.Minimum = 1;
-            this.circularProgressBar_auth1.Name = "circularProgressBar_auth1";
-            this.circularProgressBar_auth1.OuterColor = System.Drawing.SystemColors.ButtonShadow;
-            this.circularProgressBar_auth1.OuterMargin = 0;
-            this.circularProgressBar_auth1.OuterWidth = 1;
-            this.circularProgressBar_auth1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.circularProgressBar_auth1.ProgressWidth = -1;
-            this.circularProgressBar_auth1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularProgressBar_auth1.Size = new System.Drawing.Size(31, 29);
-            this.circularProgressBar_auth1.StartAngle = 270;
-            this.circularProgressBar_auth1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.circularProgressBar_auth1.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
-            this.circularProgressBar_auth1.SubscriptText = "";
-            this.circularProgressBar_auth1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.circularProgressBar_auth1.SuperscriptMargin = new System.Windows.Forms.Padding(0);
-            this.circularProgressBar_auth1.SuperscriptText = "";
-            this.circularProgressBar_auth1.TabIndex = 19;
-            this.circularProgressBar_auth1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.circularProgressBar_auth1.Value = 1;
+            this.circularProgressBar_Auth1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar_Auth1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar_Auth1.AnimationSpeed = 500;
+            this.circularProgressBar_Auth1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar_Auth1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar_Auth1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar_Auth1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar_Auth1.InnerMargin = 0;
+            this.circularProgressBar_Auth1.InnerWidth = 0;
+            this.circularProgressBar_Auth1.Location = new System.Drawing.Point(335, 17);
+            this.circularProgressBar_Auth1.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar_Auth1.Maximum = 30;
+            this.circularProgressBar_Auth1.Minimum = 1;
+            this.circularProgressBar_Auth1.Name = "circularProgressBar_Auth1";
+            this.circularProgressBar_Auth1.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar_Auth1.OuterMargin = 0;
+            this.circularProgressBar_Auth1.OuterWidth = 1;
+            this.circularProgressBar_Auth1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar_Auth1.ProgressWidth = -1;
+            this.circularProgressBar_Auth1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar_Auth1.Size = new System.Drawing.Size(31, 29);
+            this.circularProgressBar_Auth1.StartAngle = 270;
+            this.circularProgressBar_Auth1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_Auth1.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar_Auth1.SubscriptText = "";
+            this.circularProgressBar_Auth1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_Auth1.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar_Auth1.SuperscriptText = "";
+            this.circularProgressBar_Auth1.TabIndex = 19;
+            this.circularProgressBar_Auth1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar_Auth1.Value = 1;
             // 
             // ucSplitLine_H10
             // 
@@ -1703,6 +1423,51 @@ namespace Battle.netMobileAuthenticator
             this.authenticatorTimer.Interval = 500;
             this.authenticatorTimer.Tick += new System.EventHandler(this.authenticatorTimer_Tick);
             // 
+            // Auth1Timer
+            // 
+            this.Auth1Timer.Interval = 500;
+            this.Auth1Timer.Tick += new System.EventHandler(this.Auth1Timer_Tick);
+            // 
+            // Auth3Timer
+            // 
+            this.Auth3Timer.Tick += new System.EventHandler(this.Auth3Timer_Tick);
+            // 
+            // Auth2Timer
+            // 
+            this.Auth2Timer.Tick += new System.EventHandler(this.Auth2Timer_Tick);
+            // 
+            // ucBtnImg_CloudConfig
+            // 
+            this.ucBtnImg_CloudConfig.BackColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.BtnFont = new System.Drawing.Font("微软雅黑", 17F);
+            this.ucBtnImg_CloudConfig.BtnForeColor = System.Drawing.Color.Red;
+            this.ucBtnImg_CloudConfig.BtnText = "";
+            this.ucBtnImg_CloudConfig.ConerRadius = 5;
+            this.ucBtnImg_CloudConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnImg_CloudConfig.EnabledMouseEffect = false;
+            this.ucBtnImg_CloudConfig.FillColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnImg_CloudConfig.ForeColor = System.Drawing.Color.Red;
+            this.ucBtnImg_CloudConfig.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.ucBtnImg_CloudConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ucBtnImg_CloudConfig.ImageFontIcons = null;
+            this.ucBtnImg_CloudConfig.IsRadius = false;
+            this.ucBtnImg_CloudConfig.IsShowRect = false;
+            this.ucBtnImg_CloudConfig.IsShowTips = false;
+            this.ucBtnImg_CloudConfig.Location = new System.Drawing.Point(0, 176);
+            this.ucBtnImg_CloudConfig.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnImg_CloudConfig.Name = "ucBtnImg_CloudConfig";
+            this.ucBtnImg_CloudConfig.RectColor = System.Drawing.Color.White;
+            this.ucBtnImg_CloudConfig.RectWidth = 1;
+            this.ucBtnImg_CloudConfig.Size = new System.Drawing.Size(44, 50);
+            this.ucBtnImg_CloudConfig.TabIndex = 5;
+            this.ucBtnImg_CloudConfig.TabStop = false;
+            this.ucBtnImg_CloudConfig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ucBtnImg_CloudConfig.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnImg_CloudConfig.TipsText = "";
+            this.ucBtnImg_CloudConfig.BtnClick += new System.EventHandler(this.ucBtnImg_CloudConfig_BtnClick);
+            // 
             // ucBtnImg_Index
             // 
             this.ucBtnImg_Index.BackColor = System.Drawing.Color.White;
@@ -1799,53 +1564,273 @@ namespace Battle.netMobileAuthenticator
             this.ucBtnImg_Setting.TipsText = "";
             this.ucBtnImg_Setting.BtnClick += new System.EventHandler(this.ucBtnImg_Setting_BtnClick);
             // 
-            // ucBtnImg_CloudConfig
+            // panel_Auth2
             // 
-            this.ucBtnImg_CloudConfig.BackColor = System.Drawing.Color.White;
-            this.ucBtnImg_CloudConfig.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnImg_CloudConfig.BtnFont = new System.Drawing.Font("微软雅黑", 17F);
-            this.ucBtnImg_CloudConfig.BtnForeColor = System.Drawing.Color.Red;
-            this.ucBtnImg_CloudConfig.BtnText = "";
-            this.ucBtnImg_CloudConfig.ConerRadius = 5;
-            this.ucBtnImg_CloudConfig.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnImg_CloudConfig.EnabledMouseEffect = false;
-            this.ucBtnImg_CloudConfig.FillColor = System.Drawing.Color.White;
-            this.ucBtnImg_CloudConfig.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnImg_CloudConfig.ForeColor = System.Drawing.Color.Red;
-            this.ucBtnImg_CloudConfig.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
-            this.ucBtnImg_CloudConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ucBtnImg_CloudConfig.ImageFontIcons = null;
-            this.ucBtnImg_CloudConfig.IsRadius = false;
-            this.ucBtnImg_CloudConfig.IsShowRect = false;
-            this.ucBtnImg_CloudConfig.IsShowTips = false;
-            this.ucBtnImg_CloudConfig.Location = new System.Drawing.Point(0, 176);
-            this.ucBtnImg_CloudConfig.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnImg_CloudConfig.Name = "ucBtnImg_CloudConfig";
-            this.ucBtnImg_CloudConfig.RectColor = System.Drawing.Color.White;
-            this.ucBtnImg_CloudConfig.RectWidth = 1;
-            this.ucBtnImg_CloudConfig.Size = new System.Drawing.Size(44, 50);
-            this.ucBtnImg_CloudConfig.TabIndex = 5;
-            this.ucBtnImg_CloudConfig.TabStop = false;
-            this.ucBtnImg_CloudConfig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ucBtnImg_CloudConfig.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnImg_CloudConfig.TipsText = "";
-            this.ucBtnImg_CloudConfig.BtnClick += new System.EventHandler(this.ucBtnImg_CloudConfig_BtnClick);
+            this.panel_Auth2.Controls.Add(this.label__Auth2RestoreCode);
+            this.panel_Auth2.Controls.Add(this.label__Auth2Serial);
+            this.panel_Auth2.Controls.Add(this.label__Auth2name);
+            this.panel_Auth2.Controls.Add(this.label__Auth2Code);
+            this.panel_Auth2.Controls.Add(this.pictureBox_auth2copy);
+            this.panel_Auth2.Controls.Add(this.pictureBox_auth2edit);
+            this.panel_Auth2.Controls.Add(this.pictureBox_SaveListRestoreCode2);
+            this.panel_Auth2.Controls.Add(this.pictureBox_SaveListSerial2);
+            this.panel_Auth2.Controls.Add(this.circularProgressBar_Auth2);
+            this.panel_Auth2.Location = new System.Drawing.Point(23, 109);
+            this.panel_Auth2.Name = "panel_Auth2";
+            this.panel_Auth2.Size = new System.Drawing.Size(378, 90);
+            this.panel_Auth2.TabIndex = 23;
+            this.panel_Auth2.Visible = false;
+            this.panel_Auth2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Auth2_Paint);
             // 
-            // Auth1Timer
+            // label__Auth2RestoreCode
             // 
-            this.Auth1Timer.Enabled = true;
-            this.Auth1Timer.Interval = 500;
-            this.Auth1Timer.Tick += new System.EventHandler(this.Auth1Timer_Tick);
+            this.label__Auth2RestoreCode.Font = new System.Drawing.Font("微软雅黑 Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth2RestoreCode.Location = new System.Drawing.Point(38, 63);
+            this.label__Auth2RestoreCode.Name = "label__Auth2RestoreCode";
+            this.label__Auth2RestoreCode.Size = new System.Drawing.Size(91, 23);
+            this.label__Auth2RestoreCode.TabIndex = 33;
+            this.label__Auth2RestoreCode.Text = "8888888888";
             // 
-            // Auth3Timer
+            // label__Auth2Serial
             // 
-            this.Auth3Timer.Enabled = true;
-            this.Auth3Timer.Tick += new System.EventHandler(this.Auth3Timer_Tick);
+            this.label__Auth2Serial.Font = new System.Drawing.Font("微软雅黑 Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth2Serial.Location = new System.Drawing.Point(38, 34);
+            this.label__Auth2Serial.Name = "label__Auth2Serial";
+            this.label__Auth2Serial.Size = new System.Drawing.Size(142, 23);
+            this.label__Auth2Serial.TabIndex = 32;
+            this.label__Auth2Serial.Text = "CN-8888-8888-8888";
             // 
-            // Auth2Timer
+            // label__Auth2name
             // 
-            this.Auth2Timer.Enabled = true;
-            this.Auth2Timer.Tick += new System.EventHandler(this.Auth2Timer_Tick);
+            this.label__Auth2name.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth2name.Location = new System.Drawing.Point(13, 8);
+            this.label__Auth2name.Name = "label__Auth2name";
+            this.label__Auth2name.Size = new System.Drawing.Size(307, 23);
+            this.label__Auth2name.TabIndex = 31;
+            this.label__Auth2name.Text = "辣条的安全令";
+            // 
+            // label__Auth2Code
+            // 
+            this.label__Auth2Code.Font = new System.Drawing.Font("微软雅黑", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth2Code.Location = new System.Drawing.Point(274, 60);
+            this.label__Auth2Code.Name = "label__Auth2Code";
+            this.label__Auth2Code.Size = new System.Drawing.Size(92, 23);
+            this.label__Auth2Code.TabIndex = 30;
+            this.label__Auth2Code.Text = "88888888";
+            // 
+            // pictureBox_auth2copy
+            // 
+            this.pictureBox_auth2copy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth2copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2copy.Location = new System.Drawing.Point(222, 62);
+            this.pictureBox_auth2copy.Name = "pictureBox_auth2copy";
+            this.pictureBox_auth2copy.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth2copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth2copy.TabIndex = 29;
+            this.pictureBox_auth2copy.TabStop = false;
+            // 
+            // pictureBox_auth2edit
+            // 
+            this.pictureBox_auth2edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth2edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth2edit.Location = new System.Drawing.Point(248, 62);
+            this.pictureBox_auth2edit.Name = "pictureBox_auth2edit";
+            this.pictureBox_auth2edit.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth2edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth2edit.TabIndex = 28;
+            this.pictureBox_auth2edit.TabStop = false;
+            // 
+            // pictureBox_SaveListRestoreCode2
+            // 
+            this.pictureBox_SaveListRestoreCode2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode2.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox_SaveListRestoreCode2.Name = "pictureBox_SaveListRestoreCode2";
+            this.pictureBox_SaveListRestoreCode2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListRestoreCode2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListRestoreCode2.TabIndex = 27;
+            this.pictureBox_SaveListRestoreCode2.TabStop = false;
+            // 
+            // pictureBox_SaveListSerial2
+            // 
+            this.pictureBox_SaveListSerial2.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial2.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial2.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox_SaveListSerial2.Name = "pictureBox_SaveListSerial2";
+            this.pictureBox_SaveListSerial2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListSerial2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListSerial2.TabIndex = 26;
+            this.pictureBox_SaveListSerial2.TabStop = false;
+            // 
+            // circularProgressBar_Auth2
+            // 
+            this.circularProgressBar_Auth2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar_Auth2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar_Auth2.AnimationSpeed = 500;
+            this.circularProgressBar_Auth2.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar_Auth2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar_Auth2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar_Auth2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar_Auth2.InnerMargin = 0;
+            this.circularProgressBar_Auth2.InnerWidth = 0;
+            this.circularProgressBar_Auth2.Location = new System.Drawing.Point(335, 17);
+            this.circularProgressBar_Auth2.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar_Auth2.Maximum = 30;
+            this.circularProgressBar_Auth2.Minimum = 1;
+            this.circularProgressBar_Auth2.Name = "circularProgressBar_Auth2";
+            this.circularProgressBar_Auth2.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar_Auth2.OuterMargin = 0;
+            this.circularProgressBar_Auth2.OuterWidth = 1;
+            this.circularProgressBar_Auth2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar_Auth2.ProgressWidth = -1;
+            this.circularProgressBar_Auth2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar_Auth2.Size = new System.Drawing.Size(31, 29);
+            this.circularProgressBar_Auth2.StartAngle = 270;
+            this.circularProgressBar_Auth2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_Auth2.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar_Auth2.SubscriptText = "";
+            this.circularProgressBar_Auth2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_Auth2.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar_Auth2.SuperscriptText = "";
+            this.circularProgressBar_Auth2.TabIndex = 19;
+            this.circularProgressBar_Auth2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar_Auth2.Value = 1;
+            // 
+            // panel_Auth3
+            // 
+            this.panel_Auth3.Controls.Add(this.label__Auth3RestoreCode);
+            this.panel_Auth3.Controls.Add(this.label__Auth3Serial);
+            this.panel_Auth3.Controls.Add(this.label__Auth3name);
+            this.panel_Auth3.Controls.Add(this.label__Auth3Code);
+            this.panel_Auth3.Controls.Add(this.pictureBox_auth3copy);
+            this.panel_Auth3.Controls.Add(this.pictureBox_auth3edit);
+            this.panel_Auth3.Controls.Add(this.pictureBox_SaveListRestoreCode3);
+            this.panel_Auth3.Controls.Add(this.pictureBox_SaveListSerial3);
+            this.panel_Auth3.Controls.Add(this.circularProgressBar_Auth3);
+            this.panel_Auth3.Location = new System.Drawing.Point(23, 221);
+            this.panel_Auth3.Name = "panel_Auth3";
+            this.panel_Auth3.Size = new System.Drawing.Size(378, 90);
+            this.panel_Auth3.TabIndex = 24;
+            this.panel_Auth3.Visible = false;
+            this.panel_Auth3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Auth3_Paint);
+            // 
+            // label__Auth3RestoreCode
+            // 
+            this.label__Auth3RestoreCode.Font = new System.Drawing.Font("微软雅黑 Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth3RestoreCode.Location = new System.Drawing.Point(38, 63);
+            this.label__Auth3RestoreCode.Name = "label__Auth3RestoreCode";
+            this.label__Auth3RestoreCode.Size = new System.Drawing.Size(91, 23);
+            this.label__Auth3RestoreCode.TabIndex = 33;
+            this.label__Auth3RestoreCode.Text = "8888888888";
+            // 
+            // label__Auth3Serial
+            // 
+            this.label__Auth3Serial.Font = new System.Drawing.Font("微软雅黑 Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth3Serial.Location = new System.Drawing.Point(38, 34);
+            this.label__Auth3Serial.Name = "label__Auth3Serial";
+            this.label__Auth3Serial.Size = new System.Drawing.Size(142, 23);
+            this.label__Auth3Serial.TabIndex = 32;
+            this.label__Auth3Serial.Text = "CN-8888-8888-8888";
+            // 
+            // label__Auth3name
+            // 
+            this.label__Auth3name.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth3name.Location = new System.Drawing.Point(13, 8);
+            this.label__Auth3name.Name = "label__Auth3name";
+            this.label__Auth3name.Size = new System.Drawing.Size(307, 23);
+            this.label__Auth3name.TabIndex = 31;
+            this.label__Auth3name.Text = "辣条的安全令";
+            // 
+            // label__Auth3Code
+            // 
+            this.label__Auth3Code.Font = new System.Drawing.Font("微软雅黑", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label__Auth3Code.Location = new System.Drawing.Point(274, 60);
+            this.label__Auth3Code.Name = "label__Auth3Code";
+            this.label__Auth3Code.Size = new System.Drawing.Size(92, 23);
+            this.label__Auth3Code.TabIndex = 30;
+            this.label__Auth3Code.Text = "88888888";
+            // 
+            // pictureBox_auth3copy
+            // 
+            this.pictureBox_auth3copy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth3copy.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3copy.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3copy.Location = new System.Drawing.Point(222, 62);
+            this.pictureBox_auth3copy.Name = "pictureBox_auth3copy";
+            this.pictureBox_auth3copy.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth3copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth3copy.TabIndex = 29;
+            this.pictureBox_auth3copy.TabStop = false;
+            // 
+            // pictureBox_auth3edit
+            // 
+            this.pictureBox_auth3edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_auth3edit.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3edit.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_auth3edit.Location = new System.Drawing.Point(248, 62);
+            this.pictureBox_auth3edit.Name = "pictureBox_auth3edit";
+            this.pictureBox_auth3edit.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox_auth3edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_auth3edit.TabIndex = 28;
+            this.pictureBox_auth3edit.TabStop = false;
+            // 
+            // pictureBox_SaveListRestoreCode3
+            // 
+            this.pictureBox_SaveListRestoreCode3.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode3.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListRestoreCode3.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox_SaveListRestoreCode3.Name = "pictureBox_SaveListRestoreCode3";
+            this.pictureBox_SaveListRestoreCode3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListRestoreCode3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListRestoreCode3.TabIndex = 27;
+            this.pictureBox_SaveListRestoreCode3.TabStop = false;
+            // 
+            // pictureBox_SaveListSerial3
+            // 
+            this.pictureBox_SaveListSerial3.ErrorImage = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial3.Image = global::Battle.netMobileAuthenticator.Properties.Resources.arrow;
+            this.pictureBox_SaveListSerial3.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox_SaveListSerial3.Name = "pictureBox_SaveListSerial3";
+            this.pictureBox_SaveListSerial3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox_SaveListSerial3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_SaveListSerial3.TabIndex = 26;
+            this.pictureBox_SaveListSerial3.TabStop = false;
+            // 
+            // circularProgressBar_Auth3
+            // 
+            this.circularProgressBar_Auth3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar_Auth3.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar_Auth3.AnimationSpeed = 500;
+            this.circularProgressBar_Auth3.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar_Auth3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar_Auth3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar_Auth3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(57)))), ((int)(((byte)(3)))));
+            this.circularProgressBar_Auth3.InnerMargin = 0;
+            this.circularProgressBar_Auth3.InnerWidth = 0;
+            this.circularProgressBar_Auth3.Location = new System.Drawing.Point(335, 17);
+            this.circularProgressBar_Auth3.MarqueeAnimationSpeed = 1000;
+            this.circularProgressBar_Auth3.Maximum = 30;
+            this.circularProgressBar_Auth3.Minimum = 1;
+            this.circularProgressBar_Auth3.Name = "circularProgressBar_Auth3";
+            this.circularProgressBar_Auth3.OuterColor = System.Drawing.SystemColors.ButtonShadow;
+            this.circularProgressBar_Auth3.OuterMargin = 0;
+            this.circularProgressBar_Auth3.OuterWidth = 1;
+            this.circularProgressBar_Auth3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.circularProgressBar_Auth3.ProgressWidth = -1;
+            this.circularProgressBar_Auth3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar_Auth3.Size = new System.Drawing.Size(31, 29);
+            this.circularProgressBar_Auth3.StartAngle = 270;
+            this.circularProgressBar_Auth3.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_Auth3.SubscriptMargin = new System.Windows.Forms.Padding(18, -31, 0, 0);
+            this.circularProgressBar_Auth3.SubscriptText = "";
+            this.circularProgressBar_Auth3.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.circularProgressBar_Auth3.SuperscriptMargin = new System.Windows.Forms.Padding(0);
+            this.circularProgressBar_Auth3.SuperscriptText = "";
+            this.circularProgressBar_Auth3.TabIndex = 19;
+            this.circularProgressBar_Auth3.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.circularProgressBar_Auth3.Value = 1;
             // 
             // MainForm
             // 
@@ -1872,20 +1857,7 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_SaveList.ResumeLayout(false);
             this.tabControl_SaveList.ResumeLayout(false);
             this.tabPage_SaveListEx.ResumeLayout(false);
-            this.panel_auth3.ResumeLayout(false);
-            this.panel_auth3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3copy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3edit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial3)).EndInit();
-            this.panel_auth2.ResumeLayout(false);
-            this.panel_auth2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2copy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2edit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial2)).EndInit();
-            this.panel_auth1.ResumeLayout(false);
-            this.panel_auth1.PerformLayout();
+            this.panel_Auth1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1copy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth1edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode1)).EndInit();
@@ -1905,6 +1877,16 @@ namespace Battle.netMobileAuthenticator
             this.tabPage_LoginQQ.ResumeLayout(false);
             this.tabPage_LoginQQ.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_QQ)).EndInit();
+            this.panel_Auth2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2copy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth2edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial2)).EndInit();
+            this.panel_Auth3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3copy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_auth3edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListRestoreCode3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SaveListSerial3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1996,37 +1978,37 @@ namespace Battle.netMobileAuthenticator
         private System.Windows.Forms.Timer Auth3Timer;
         private System.Windows.Forms.Timer Auth2Timer;
         private CircularProgressBar.CircularProgressBar circularProgressBar3;
-        private System.Windows.Forms.Panel panel_auth1;
-        private CircularProgressBar.CircularProgressBar circularProgressBar_auth1;
-        private MetroFramework.Controls.MetroLabel metroLabel_auth1name;
+        private System.Windows.Forms.Panel panel_Auth1;
+        private CircularProgressBar.CircularProgressBar circularProgressBar_Auth1;
         private MetroFramework.Controls.MetroLabel metroLabel19;
         private MetroFramework.Controls.MetroLabel metroLabel20;
-        private MetroFramework.Controls.MetroLabel metroLabel21;
-        private MetroFramework.Controls.MetroLabel metroLabel22;
-        private MetroFramework.Controls.MetroLabel metroLabel23;
         private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode1;
         private System.Windows.Forms.PictureBox pictureBox_SaveListSerial1;
         private System.Windows.Forms.PictureBox pictureBox_auth1edit;
         private System.Windows.Forms.PictureBox pictureBox_auth1copy;
-        private System.Windows.Forms.Panel panel_auth2;
-        private System.Windows.Forms.PictureBox pictureBox_auth2copy;
-        private System.Windows.Forms.PictureBox pictureBox_auth2edit;
-        private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode2;
-        private System.Windows.Forms.PictureBox pictureBox_SaveListSerial2;
-        private MetroFramework.Controls.MetroLabel metroLabel17;
-        private MetroFramework.Controls.MetroLabel metroLabel18;
-        private MetroFramework.Controls.MetroLabel metroLabel24;
-        private MetroFramework.Controls.MetroLabel metroLabel25;
-        private CircularProgressBar.CircularProgressBar circularProgressBar1;
-        private System.Windows.Forms.Panel panel_auth3;
+        private System.Windows.Forms.Label label__Auth1Code;
+        private System.Windows.Forms.Label label__Auth1name;
+        private System.Windows.Forms.Label label__Auth1Serial;
+        private System.Windows.Forms.Label label__Auth1RestoreCode;
+        private System.Windows.Forms.Panel panel_Auth3;
+        private System.Windows.Forms.Label label__Auth3RestoreCode;
+        private System.Windows.Forms.Label label__Auth3Serial;
+        private System.Windows.Forms.Label label__Auth3name;
+        private System.Windows.Forms.Label label__Auth3Code;
         private System.Windows.Forms.PictureBox pictureBox_auth3copy;
         private System.Windows.Forms.PictureBox pictureBox_auth3edit;
         private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode3;
         private System.Windows.Forms.PictureBox pictureBox_SaveListSerial3;
-        private MetroFramework.Controls.MetroLabel metroLabel26;
-        private MetroFramework.Controls.MetroLabel metroLabel27;
-        private MetroFramework.Controls.MetroLabel metroLabel28;
-        private MetroFramework.Controls.MetroLabel metroLabel29;
-        private CircularProgressBar.CircularProgressBar circularProgressBar2;
+        private CircularProgressBar.CircularProgressBar circularProgressBar_Auth3;
+        private System.Windows.Forms.Panel panel_Auth2;
+        private System.Windows.Forms.Label label__Auth2RestoreCode;
+        private System.Windows.Forms.Label label__Auth2Serial;
+        private System.Windows.Forms.Label label__Auth2name;
+        private System.Windows.Forms.Label label__Auth2Code;
+        private System.Windows.Forms.PictureBox pictureBox_auth2copy;
+        private System.Windows.Forms.PictureBox pictureBox_auth2edit;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListRestoreCode2;
+        private System.Windows.Forms.PictureBox pictureBox_SaveListSerial2;
+        private CircularProgressBar.CircularProgressBar circularProgressBar_Auth2;
     }
 }

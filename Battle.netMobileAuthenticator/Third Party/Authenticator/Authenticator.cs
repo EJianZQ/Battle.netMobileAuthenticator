@@ -49,10 +49,11 @@ using OpenNETCF.Security.Cryptography;
 
 namespace Battle.netMobileAuthenticator
 {
-  /// <summary>
-  /// Class that implements base RFC 4226 an RFC 6238 authenticator
-  /// </summary>
-  public abstract class Authenticator : ICloneable
+    /// <summary>
+    /// Class that implements base RFC 4226 an RFC 6238 authenticator
+    /// </summary>
+    [Serializable]
+    public abstract class Authenticator : ICloneable
   {
     /// <summary>
     /// Number of bytes making up the salt
